@@ -1,0 +1,372 @@
+extends _layout
+
+block body
+	.masthead(style="background-image: url(http://cdn.jamlondon.io.s3.amazonaws.com/photos/conference/2017/070.jpg)")
+		h1 Jam 2018 Sponsorship Pack
+		.masthead-logo
+
+	script.
+
+		$(window).scroll(function() {
+			if ( $(window).scrollTop() > 300 ) {
+				$(".navigation").addClass("is-visible");
+			}
+
+			else {
+				$(".navigation").removeClass("is-visible");
+			}
+		});
+
+	.navigation
+		a.is-active(href="#intro") Intro
+		a(href="#team") Team
+		a(href="#2017") JAM 2017 Review
+		a(href="#packages") Packages
+		a(href="#next") Next steps
+
+	.section(id="intro")
+		.container
+			.intro-section
+				p Going on its 4th year, JAM provides a fantastic opportunity to expose your brand to a talented audience of some of London’s leading product managers, designers and founders / leading product teams 
+
+				p We are looking for great companies that want to help us run an exceptional event – one that inspires, energises and educates/elevates/cultivates the best product teams in town. 
+
+				p And we want you in the spotlight – this is why we’ve designed an open sponsorship menu, leaving it to you to decide what suits you best / how you’d like to get involved.
+
+				p If you wish to stand out from the crowd with a bespoke experience, of if you have an idea or concept you wish to discuss, just get in touch. We’ll work together to bring you the best results!
+
+	
+	.section.background-greyscale-100.team-section(id="team")
+		.container
+			h2.section-heading.text-center Team
+			.columns.display-flex-above-md
+				.columns-4.display-flex
+					.team-profile.panel
+						.team-avatar(style="background-image: url(/public/img/mathilde.jpeg)")
+						h3 Mathilde Leo
+						.label.label-green Organiser
+						p Freelance product manager. Previously Product Lead at Founders Factory and Product Manager at Deliveroo.
+
+						.team-profile-social
+							a(href="https://twitter.com/Mathilde_Leo" target="_blank")
+								+icon({"name": "twitter", "class": ""})
+							a(href="https://www.linkedin.com/in/mathildeleo/" target="_blank")
+								.position-relative(style="top: -2px; left: 1px")
+									+icon({"name": "linkedin", "class": ""})
+
+				.columns-4.display-flex
+					.team-profile.panel
+						.team-avatar(style="background-image: url(/public/img/seb.jpeg)")
+						h3 Seb Powell
+						.label.label-green Organiser
+						p Co-founder & CPO at GetAgent.co.uk. Previously Head of Design at Adbrain.
+						.team-profile-social
+							a(href="https://twitter.com/sebpowell" target="_blank")
+								+icon({"name": "twitter", "class": ""})
+							a(href="https://www.linkedin.com/in/sebastienpowell/" target="_blank")
+								.position-relative(style="top: -2px; left: 1px")
+									+icon({"name": "linkedin", "class": ""})
+
+				.columns-4.display-flex
+					.team-profile.panel
+						.team-avatar(style="background-image: url(/public/img/sunil.jpeg)")
+						h3 Sunil Pitwha
+						.label.label-green MC
+						p Freelance product manager. Previously Product Lead at Founders Factory and Product Manager at Deliveroo
+						.team-profile-social
+							a(href="https://twitter.com/SunilUXD" target="_blank")
+								+icon({"name": "twitter", "class": ""})
+							a(href="https://www.linkedin.com/in/sunilpithwa/" target="_blank")
+								.position-relative(style="top: -2px; left: 1px")
+									+icon({"name": "linkedin", "class": ""})
+
+
+	.section(id="2017")
+		.container
+			h2.section-heading.text-center Jam 2017 Review
+
+			.sub-section.no-border.no-padding-bottom
+				ul.stats-summary
+					li
+						.caption Attendees
+						.stat= attendees.length
+						.verified
+							+icon({"name": "tick-simple"}) 
+							.verified-label Verified
+						
+					li
+						.caption Companies
+						.stat= companies.length
+
+						.verified
+							+icon({"name": "tick-simple"}) 
+							.verified-label Verified
+						
+					li
+						.caption NPS
+						.stat 8.1
+						.verified
+							+icon({"name": "tick-simple"}) 
+							.verified-label Verified
+						
+					li
+						.caption Talks
+						.stat 9
+						
+
+				.well
+					.columns.display-flex-above-md
+						.columns-4.display-flex.no-margin
+							.panel.graph
+								.text-center
+									.panel-title Type of role
+
+									.verified
+										+icon({"name": "tick-simple"}) 
+										.verified-label Verified
+
+								div.text-center.margin-auto(style="height: 150px; width: 150px")
+									canvas.display-inline-block(id="type" width="100" height="100")
+
+								ul.legend
+									li.legend-1 
+										.text Product (40%)
+									li.legend-2  
+										.text Design (30%)
+									li.legend-3  
+										.text Founder (15%)
+									li.legend-4  
+										.text Engineer (10%)
+									li.legend-5 
+										.text Other (5%)
+						.columns-4.display-flex.no-margin
+							.panel.graph
+								.text-center
+									.panel-title Years of experience
+									.verified
+										+icon({"name": "tick-simple"}) 
+										.verified-label Verified
+								div.text-center.margin-auto(style="height: 150px; width: 150px")
+									canvas.display-inline-block(id="experience" width="100" height="100")
+
+								ul.legend
+									li.legend-1 
+										.text 5+ years (60%)
+									li.legend-2 
+										.text 3 - 5 years (25%)
+									li.legend-3 
+										.text 0 - 3 years (15%)
+
+						.columns-4.display-flex.no-margin
+							.panel.graph
+								.text-center
+									.panel-title Type of company
+									.verified
+										+icon({"name": "tick-simple"}) 
+										.verified-label Verified
+								div.text-center.margin-auto(style="height: 150px; width: 150px")
+									canvas.display-inline-block(id="company" width="100" height="100")
+
+								ul.legend
+									li.legend-1 
+										.text Startup (40%)
+									li.legend-2 
+										.text Agency (30%)
+									li.legend-3 
+										.text Corporate (20%)
+									li.legend-4 
+										.text Other (10%)
+
+			.sub-section
+				h3.sub-section-heading Videos
+
+				.video.large-video.margin-bottom-6(data-modal="video-1")
+					.video-thumb(style="background-image: url(https://cdn.jamlondon.io/photos/conference/2017/190.jpg)")
+						.video-play
+							+icon({"name": "play"})
+
+					.video-title JAM 2017 After-movie
+
+					.modal-container(id="video-1")
+						.modal
+							iframe(src="https://youtu.be/N_Hefna0Qqk")
+
+				.columns
+					each video, i in videos
+						if i <= 5
+							.columns-4
+								.video(data-modal="video-#{i}")
+									.video-thumb(style="background-image: url(https://cdn.jamlondon.io/photos/conference/2017/#{video.background}.jpg)")
+										.video-play
+											+icon({"name": "play"})
+									.video-title= video.title 
+									.video-speaker= video.name + "– " + video.position + ", " + video.company
+
+						.modal-container(id="video-#{i}")
+							.modal
+								//- iframe(style="width: 100%" src="https://www.youtube.com/embed/#{video.video}" height="400" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen)
+									
+	
+				.text-center
+					a.link(href="https://www.youtube.com/channel/UC6IZvZHymtDYaucmkU0pEog" target="_blank") See more videos
+
+			.sub-section
+				h3.sub-section-heading Photos
+				
+				.columns
+					- for (var i = 1; i < 10; i++)
+						.columns-4
+							.photo(style="background-image: url(https://cdn.jamlondon.io/photos/conference/2017/#{i}.jpg)")
+
+				.text-center.margin-top-5
+					a.link(href="https://www.facebook.com/pg/makingjam/photos/?tab=album&album_id=2209087595784228" target="_blank") See more photos
+
+			.sub-section
+				h3.sub-section-heading Tweets
+
+				.columns.display-flex.flex-wrap
+					each tweet in tweets
+						.columns-4.display-flex.margin-bottom-4
+							.panel-basic.tweet
+
+								+icon({"name": "twitter", "class": "tweet-icon"})
+								.tweet-date= tweet.date
+								a.tweet-text(href="#{tweet.link}" target="_blank")
+									p= tweet.text
+								.tweet-handle= tweet.handle
+
+				.text-center.margin-top-5
+					a.link(href="" target="_blank") See more tweets
+
+			.sub-section
+				h3.sub-section-heading Attendees
+
+				.well
+					.attendees.columns
+						each attendee, i in attendees
+							if i <= 15
+								.columns-3.display-flex
+									.attendee.panel-basic.width-100
+										.company-logo(style="background-image: url(https://logo.clearbit.com/#{attendee.website}?s=128)")
+										.attendee-company-title= attendee.title
+										.attendee-company-name= attendee.company.toLowerCase()
+
+
+				.text-center.margin-top-5
+					a.link(href="" target="_blank" data-modal="attendees") See all attendees
+
+				.modal-container(id="attendees")
+					.modal
+						.modal-close
+							+icon({"name": "close"})
+						.tabs
+							.tabs-navigation
+								a.is-active(href="1") People
+								a(href="1") Companies
+							
+							.tabs-content.is-open
+								ul.attendees-list
+									each attendee in attendees
+										li
+											.display-table
+												.display-table-cell.vertical-align-middle.padding-right-3
+													.company-logo(style="background-image: url(https://logo.clearbit.com/#{attendee.company.toLowerCase()}.com?s=128)")
+												.display-table-cell.vertical-align-middle
+													.attendee-company-name= attendee.company
+													.attendee-company-title.no-margin= attendee.title
+
+							.tabs-content
+								.modal-body
+									.columns
+										each company in companies
+											.columns-4
+												.company-logo(style="background-image: url(https://logo.clearbit.com/#{company.toLowerCase()}.com?s=128)")
+												.attendee-company-name= company
+
+
+
+	.section.background-greyscale-100(id="packages")
+		.container
+			h2.section-heading.text-center.margin-bottom-8 Packages
+
+			.panel.package-container
+				.core-package
+					h2 Core package
+					.core-price £5000 + VAT
+					
+					ul.package-features
+						li 
+							+icon({"name": "tick"})
+							| Logo placement on our website
+						li 
+							+icon({"name": "tick"})
+							| Logo placement in event introduction deck
+						li
+							+icon({"name": "tick"})
+							| Logo placement in all pre-event emails to attendees
+						li 
+							+icon({"name": "tick"})
+							| Minimum 3 social media mentions
+						li 
+							+icon({"name": "tick"})
+							| Dedicated introduction of your company by our MC
+						li
+							+icon({"name": "tick"})
+							| Feature in our attendee booklet - 1 A5 page (include example)
+						li
+							+icon({"name": "tick"})
+							| 1 ticket (worth £350 each)
+
+						li
+							+icon({"name": "tick"})
+							| 30% discount on all additional tickets
+						li
+							+icon({"name": "tick"})
+							| Access to attendee list before the event
+
+				
+				.extras.no-padding
+					.extras-heading 
+						h3 Extras
+					
+					.extras-list.display-flex.columns
+						each package in extras
+							.columns-4.display-flex
+								.package.display-flex
+									if package.status === 0
+										.package-sold-out Sold out
+
+									.display-table.width-100
+										.display-table-cell
+											.package-title= package.name
+											if package.description
+												.package-description= package.description
+											.package-link See example
+											.package-quantity 1 of 3 left
+										if package.status !== 0
+											.display-table-cell.text-right
+												.package-price= "£"+ package.price
+	.section.no-border(id="next")
+		.container
+			.text-center
+				h2.section-heading.text-center.margin-bottom-3 Next steps
+
+				.margin-bottom-5
+					p.section-subheading Sponsorship slots are limited and available on a first-come, first-served basis. Schedule a call to discuss your goals with Mathilde.
+
+				a.button.button-large.button-primary.margin-bottom-3(href="https://calendly.com/jam-sponsorship" target="_blank") Let's have a chat!
+
+
+	footer.footer
+
+		a.footer-logo(href="https://airfinity.com")
+			+icon({"name": "airfinity"})
+		.footer-powered-by Powered by Airfinity
+		.label beta
+
+		.footer-copyright © Airfinity Ltd. 2018
+
+
+
+
+

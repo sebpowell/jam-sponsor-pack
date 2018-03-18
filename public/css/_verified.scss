@@ -1,0 +1,29 @@
+.verified {
+
+	display: inline-flex;
+	color: colors("secondary");
+	font-size: 13px;
+	border-radius: 100px;
+	padding-right: 10px;
+	// border: 1px solid rgba(colors("secondary"), 0.5);
+	margin-bottom: sizes(4);
+
+	.verified-label {
+		position: relative;
+		top: 1px;
+	}
+
+	svg {
+		width: 20px;
+		height: 20px;
+		background-color: rgba(colors("secondary"), 0.15);
+		border-radius: 100px;
+		margin-right: sizes(1);
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		// top: -1px;
+		fill: colors("secondary");
+
+	}
+}

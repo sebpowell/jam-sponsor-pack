@@ -1,0 +1,43 @@
+.footer {
+	
+	
+	padding: 80px sizes(3);
+	text-align: center;
+	// border-top: 1px solid colors("keyline");
+	background-color: colors("greyscale", 50);
+
+	.label {
+		@include uppercase(0.2em);
+		border-color: colors("brand");
+		color: colors("brand");
+		font-size: 9px;
+		margin-bottom: sizes(4);
+		padding: 3px 5px 2px 5px!important;
+		min-width: auto;
+	}
+
+
+	.footer-powered-by {
+		@include uppercase(0.2em);
+		color: colors("greyscale", 600);
+		font-size: 9px;
+		margin-bottom: sizes(1);
+	}
+
+	.footer-copyright {
+		color: colors("greyscale", 500);
+		font-size: 12px;
+	}
+	
+
+	.footer-logo {
+		display: inline-block;
+		margin-bottom: sizes(3);
+	}
+	svg {
+		width: 40px;
+		height: 40px;
+		fill: colors("greyscale", 500);
+		
+	}
+}

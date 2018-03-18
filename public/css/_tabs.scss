@@ -1,0 +1,27 @@
+.tabs {
+	.tabs-navigation {
+
+		@include clearfix();
+		border-bottom: 1px solid colors("keyline");
+		width: 100%;
+		
+		a {	
+			float: left;
+			padding: sizes(4) sizes(5);
+
+			&.is-active {
+				color: colors("brand");
+			}
+		}
+	}
+
+	
+	.tabs-content {
+		display: none;
+
+		&.is-open {
+			display: block;
+		}
+	}
+
+}

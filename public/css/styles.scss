@@ -1,0 +1,285 @@
+@import "_reset";
+@import "_settings";
+@import "mixins/mixins";
+@import "helpers/helpers";
+
+@import "_attendees";
+@import "_masthead";
+@import "_label";
+@import "_footer";
+@import "_intro";
+@import "_section";
+@import "_team";
+@import "_stats";
+@import "_videos";
+@import "_package";
+@import "_panel";
+@import "_modal";
+@import "_tweet";
+@import "_tabs";
+@import "_verified";
+
+.overflow-hidden {
+	overflow: hidden;
+}
+
+body {
+	font-family: "Avenir Next";
+}
+
+iframe {
+	vertical-align: middle;
+}
+
+.no-border {
+	border: 0 !important;
+}
+
+p {
+	line-height: 1.8;
+}
+
+
+
+.button {
+	display: inline-block;
+	border-radius: 100px;
+	cursor: pointer;
+
+	&.button-primary {
+		background-color: colors("brand");
+		color: white;
+		font-weight: 500;
+
+		&:hover {
+			background-color: darken(colors("brand"), 10%);
+		}
+	}
+
+	&.button-large {
+		height: 60px;
+		line-height: 60px;
+		padding: 0 sizes(12);
+		font-size: 18px;
+	}
+
+	&.button-plain {
+		border: 1px solid colors("keyline");
+	}
+}
+
+
+
+
+
+
+
+.navigation {
+	position: fixed;
+	background-color: white;
+	z-index: 5;
+	top: 0;
+	width: 100%;
+	box-shadow: 0 1px 5px rgba(00,00,00,0.1);
+
+	text-align: center;
+
+	transform: translateY(-100px);
+	transition: all .25s;
+
+	&.is-visible {
+		transform: translateY(0);
+	}
+
+	a {
+		@include uppercase(0.1em);
+		font-size: 12px;
+		display: inline-block;
+		padding: sizes(4) sizes(5);
+		color: colors("greyscale", 500);
+		position: relative;
+
+		&:hover {
+			color: colors("greyscale", 900);
+		}
+
+		&.is-active {
+			color: colors("brand");
+
+			&:after {
+				content: "";
+				background-color: colors("brand");
+				width: 100%;
+				height: 2px;
+				left: 0;
+				position: absolute;
+				bottom: 0;
+			}
+		}
+	}
+}
+
+
+
+.progress-bar {
+	border-radius: 3px;
+	height: 5px;
+	background-color: colors("greyscale", 200);
+
+	.progress-bar-status {
+		width: 50%;
+		height: 100%;
+		background-color: colors("brand");
+	}
+}
+
+
+
+
+
+
+.packages-left {
+
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+
+
+
+
+
+
+
+
+
+.is-hidden {
+	display: none;
+}
+
+
+
+
+
+
+
+.link {
+	color: colors("brand");
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	border-radius: 100px;
+	text-align: center;
+	margin: 0 auto;
+	border: 1px solid rgba(colors("brand"), 0.2);
+	padding: sizes(2) sizes(6);
+
+	&:visited {
+		color: colors("brand");
+	}
+
+	&:after {
+		content: "";
+		border-radius: 2px;
+		background-color: rgba(colors("brand"), 0.1);
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 0;
+		display: inline-block;
+		transition: all .25s;
+		border-radius: 100px;
+		bottom: 0;
+		z-index: -1;
+	}
+
+	&:hover {
+		&:after {
+			height: 100%;
+
+		}
+	}
+}
+
+
+
+
+.stat-panel {
+	padding: sizes(10);
+	text-align: center;
+
+	h1 {
+		color: colors("brand");
+	}
+}
+
+.detail-heading {
+	@include uppercase(0.1em);
+	font-size: 12px;
+	color: colors("greyscale", 500);
+}
+
+
+
+
+
+
+
+
+
+
+.package {
+	h2 {
+		font-weight: 400;
+		color: colors("brand");
+	}
+
+	
+}
+
+
+
+
+
+
+.position-relative {
+	position: relative;
+}
+
+
+.panel-basic {
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+}
+
+
+.photo {
+	@include background-image();
+	height: 280px;
+	width: 100%;
+	border-radius: 3px;
+	// margin-bottom: sizes(4);
+
+}
+
+
+
+
+
+
+h3 {
+	font-weight: 400;
+}
+
+
+
+
+.avatar {
+	@include circle(100px);
+}
+

@@ -1,0 +1,37 @@
+.tweet {
+	padding: sizes(8);
+
+	.tweet-text {
+		line-height: 1.6;
+		margin-bottom: sizes(4);
+		display: block;
+		margin-top: sizes(2);
+
+		&:hover {
+			text-decoration: underline;
+			text-underline-position: under;
+		}
+	}
+
+	.tweet-date {
+		font-size: 12px;
+		color: colors("greyscale", 500);
+		vertical-align: middle;
+		display: inline-block;
+
+	}
+
+	.tweet-icon {
+		fill: colors("brand");
+		width: 20px;
+		height: 20px;
+		vertical-align: middle;
+		display: inline-block;
+	}
+
+	.tweet-handle {
+		@include uppercase(0.1em);
+		font-size: 11px;
+		color: colors("greyscale", 500);
+	}
+}

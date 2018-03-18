@@ -1,0 +1,51 @@
+.attendees {
+	@include clearfix();
+	display: flex;
+	flex-wrap: wrap;
+
+	.attendee {
+		// width: 16.66%;
+		// float: left;
+		text-align: center;
+		background-color: white;
+		padding: sizes(5);
+		// margin-bottom: sizes(6);
+	}
+}
+
+.company-logo {
+	@include circle(60px);
+	// border-radius: 2px;
+	@include background-image();
+	background-color: white;
+	box-shadow: 0 1px 1px rgba(00,00,00,0.15);
+	// background-size: 90%;
+	margin: 0 auto sizes(2);
+	border: 1px solid colors("keyline");
+}
+
+.attendee-company-title {
+	font-size: 15px;
+	text-transform: capitalize;
+	margin-bottom: sizes(1);
+}
+
+.attendee-company-name {
+	font-size: 13px;
+	text-transform: capitalize;
+	color: colors("greyscale", 600);
+}
+
+.attendees-list {
+	@include no-bullet();
+
+
+	> li {
+		// border-bottom: 1px solid colors("keyline");
+		padding: sizes(2) sizes(5);
+
+		.company-logo {
+			@include circle(50px);
+		}
+	}
+}

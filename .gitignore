@@ -1,0 +1,9 @@
+node_modules
+.sass-cache/
+npm-debug.log
+.DS_Store
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
