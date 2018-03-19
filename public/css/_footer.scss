@@ -4,7 +4,7 @@
 	padding: 80px sizes(3);
 	text-align: center;
 	// border-top: 1px solid colors("keyline");
-	background-color: colors("greyscale", 50);
+	// background-color: colors("greyscale", 50);
 
 	.label {
 		@include uppercase(0.2em);
@@ -31,11 +31,11 @@
 	
 
 	.footer-logo {
-		display: inline-block;
-		margin-bottom: sizes(3);
+		display: block;
+		margin-bottom: sizes(0);
 	}
 	svg {
-		width: 40px;
+		width: 140px;
 		height: 40px;
 		fill: colors("greyscale", 500);
 		

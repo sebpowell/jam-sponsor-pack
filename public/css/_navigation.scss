@@ -1,0 +1,77 @@
+.navigation {
+	position: fixed;
+	background-color: white;
+	z-index: 5;
+	top: 0;
+	width: 100%;
+	box-shadow: 0 1px 5px rgba(00,00,00,0.1);
+
+	text-align: center;
+
+	transform: translateY(-100px);
+	transition: all .25s;
+	overflow-y: scroll;
+	display: flex;
+
+	&.is-visible {
+		transform: translateY(0);
+	}
+
+	.navigation-container {
+		max-width: 1200px;
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		padding: 0 sizes(3);
+		align-items: center;
+	}
+
+	.navigation-links {
+		display: flex;
+
+		a {
+			@include uppercase(0.1em);
+			font-size: 13px;
+			display: inline-block;
+			white-space: nowrap;
+			padding: sizes(4) sizes(5);
+			color: colors("greyscale", 700);
+			position: relative;
+
+			&:hover {
+				color: colors("greyscale", 900);
+			}
+
+			&.is-active {
+				color: colors("brand");
+				font-weight: bold;
+				&:after {
+					content: "";
+					background-color: colors("brand");
+					width: 100%;
+					height: 1px;
+					left: 0;
+					position: absolute;
+					bottom: 0;
+				}
+			}
+		}
+	}
+
+	.navigation-cta {
+		margin-left: auto;
+	}
+
+	.logo {
+		@include circle(60px);
+		background-color: white;
+		box-shadow: 0 1px 1px rgba(00,00,00,0.15);
+		background-image: url("/public/img/logo.png");
+		background-size: 70%;
+		background-position: center;
+		background-repeat: no-repeat;
+		z-index: 2;
+		margin-right: sizes(5);
+	}
+
+}

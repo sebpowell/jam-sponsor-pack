@@ -5,3 +5,13 @@ $(document).ready(function() {
 		$(this).addClass("is-active");
 	});
 });
+
+$(window).scroll(function() {
+	if ( $(window).scrollTop() > 300 ) {
+		$(".navigation").addClass("is-visible");
+	}
+
+	else {
+		$(".navigation").removeClass("is-visible");
+	}
+});

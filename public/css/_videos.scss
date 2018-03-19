@@ -4,6 +4,7 @@
 
 	transition: all .25s;
 	position: relative;
+
 	padding-bottom: sizes(6);
 
 	&:after {
@@ -38,7 +39,7 @@
 	.video-thumb {
 		@include background-image();
 		height: 280px;
-		border-radius: 3px;
+		border-radius: $border-radius;
 		margin-bottom: sizes(4);
 		position: relative;
 		transition: all .25s;

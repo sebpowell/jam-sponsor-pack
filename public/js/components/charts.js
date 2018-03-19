@@ -86,4 +86,56 @@ $(document).ready(function() {
 	    data: data,
 	    options: options
 	});
+
+	var ctx = document.getElementById("industry");
+
+	var data = {
+	    labels: [
+	        "Internet Software & Services",
+	        "Professional Services",
+	        "Diversified Financial Services",
+	        "Media",
+	        "Consumer Staples"
+	    ],
+	    datasets: [{
+	        data: [75, 10, 6, 10, 10],
+	        backgroundColor: [
+                "#14a6ff",
+                "#6abcf9",
+                "#98d1fb",
+                "#cae8fd",
+                "#e0f2fe"
+	        ]
+	    }]
+	};
+
+	var myDoughnutChart = new Chart(ctx, {
+	    type: 'doughnut',
+	    data: data,
+	    options: options
+	});
+
+	var ctx = document.getElementById("seniority");
+
+	var data = {
+	    labels: [
+	        "Manager",
+	        "Director",
+	        "Executive"
+	    ],
+	    datasets: [{
+	        data: [69, 19, 11],
+	        backgroundColor: [
+                "#14a6ff",
+                "#6abcf9",
+                "#98d1fb"
+	        ]
+	    }]
+	};
+
+	var myDoughnutChart = new Chart(ctx, {
+	    type: 'doughnut',
+	    data: data,
+	    options: options
+	});
 });

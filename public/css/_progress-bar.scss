@@ -1,0 +1,12 @@
+.progress-bar {
+	border-radius: 100px;
+	height: 5px;
+	background-color: colors("greyscale", 200);
+
+	.progress-bar-status {
+		width: 50%;
+		height: 100%;
+		background-color: colors("brand");
+		border-radius: 100px;
+	}
+}

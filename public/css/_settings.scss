@@ -4,10 +4,11 @@ $breakpoints: (
 
 $colors: (
 	"brand": #16a4ff,
-	"secondary": #4cc41b,
+	"secondary": #4dc41a,
+	"twitter": #00a2f9,
 	"greyscale": (
 		50:  #f9f9f9,
-		100: #F5F5F5,
+		100: #f6f7f8,
 		200: #EEEEEE,
 		300: #E0E0E0,
 		400: #BDBDBD,
@@ -26,6 +27,18 @@ $grid: (
 	"gutter": 30px,
 	"breakpoint": 980px
 );
+
+$text-sizes: (
+	1: 12px,
+	2: 14px,
+	3: 16px,
+	4: 18px,
+	5: 20px,
+	6: 25px,
+	7: 30px
+);
+
+$border-radius: 10px;
 
 $max-width-scale: 14;
 

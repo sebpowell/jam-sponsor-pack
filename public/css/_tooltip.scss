@@ -1,0 +1,41 @@
+.tooltip {
+
+	position: relative;
+	cursor: pointer;
+
+	.tooltip-content {
+		border-radius: 3px;
+		position: absolute;
+		background: colors("greyscale", 900);
+		visibility: hidden;
+		opacity: 0;
+		width: 150px;
+		left: 50%;
+		margin: auto;
+		transform: translateX(-50%) translateY(10px) scale(0.98);
+		color: white;
+		top: calc(100% + 5px);
+		font-size: 12px;
+		line-height: 1.4;
+		margin-right: 0;
+		padding: sizes(3);
+		z-index: 999;
+		transition: all .25s;
+
+		&:before {
+			@include arrow("up", colors("greyscale", 900), 10px);
+			position: absolute;
+			left: 50%;
+			top: -10px;
+			margin-left: -10px;
+		}
+	}
+
+	&:hover {
+		.tooltip-content {
+			visibility: visible;
+			opacity: 1;
+			transform: translateX(-50%) translateY(0px) scale(1);
+		}
+	}
+}

@@ -1,0 +1,29 @@
+.button {
+	display: inline-block;
+	border-radius: 100px;
+	cursor: pointer;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 sizes(5);
+
+	&.button-primary {
+		background-color: colors("brand");
+		color: white;
+		font-weight: 500;
+
+		&:hover {
+			background-color: darken(colors("brand"), 10%);
+		}
+	}
+
+	&.button-large {
+		height: 60px;
+		line-height: 60px;
+		padding: 0 sizes(12);
+		font-size: 18px;
+	}
+
+	&.button-plain {
+		border: 1px solid colors("keyline");
+	}
+}

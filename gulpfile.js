@@ -23,11 +23,12 @@ gulp.task("jade", function() {
 			attendees: JSON.parse( fs.readFileSync('./views/attendees.json') ),
 			tweets: JSON.parse( fs.readFileSync('./views/tweets.json') ),
 			extras: JSON.parse( fs.readFileSync('./views/extras.json') ),
+			sponsors: JSON.parse( fs.readFileSync('./views/sponsors.json') ),
 			companies: JSON.parse( fs.readFileSync('./views/companies.json') ),
 			videos: JSON.parse( fs.readFileSync('./views/videos.json') ),
 		}
 	}))
-	.pipe(gulp.dest("./"));
+	.pipe(gulp.dest("./jamlondon"));
 });
 
 /////////////////////////////////////////////////////
