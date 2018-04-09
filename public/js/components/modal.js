@@ -4,6 +4,8 @@ $(document).ready(function() {
 		var target = $(this).data('modal');
 		$("#"+target).addClass("is-open");
 		$("body").addClass("overflow-hidden");
+
+		alert("test");
 	});
 
 	function closeModal() {

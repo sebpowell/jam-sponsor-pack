@@ -25,6 +25,7 @@ gulp.task("jade", function() {
 			extras: JSON.parse( fs.readFileSync('./views/extras.json') ),
 			sponsors: JSON.parse( fs.readFileSync('./views/sponsors.json') ),
 			companies: JSON.parse( fs.readFileSync('./views/companies.json') ),
+			testimonials: JSON.parse( fs.readFileSync('./views/testimonials.json') ),
 			videos: JSON.parse( fs.readFileSync('./views/videos.json') ),
 		}
 	}))

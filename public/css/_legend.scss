@@ -1,0 +1,51 @@
+.legend {
+	@include no-bullet();
+
+	li {
+		font-size: 14px;
+		padding: sizes(3) 0;
+		position: relative;
+		
+		.text {
+			color: colors("greyscale", 900);
+			display: inline-block;
+		}
+
+		&:before {
+			content: "";
+			@include circle(10px);
+			display: inline-block;
+			background-color: currentColor;
+			margin-right: sizes(1);
+		}
+
+		&:not(:last-of-type) {
+			border-bottom: 1px solid colors("keyline");
+		}
+
+		&:last-of-type {
+			padding-bottom: 0;
+		}
+	}
+}
+
+
+.legend-1 {
+	color: #132de7;
+}
+
+.legend-2 {
+	color: #28bf54;
+}
+
+.legend-3 {
+	color: #fec919;
+}
+
+.legend-4 {
+	color: #e25e04;
+}
+
+.legend-5 {
+	color: #fe2c78;
+}

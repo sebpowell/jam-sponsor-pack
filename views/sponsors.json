@@ -1,14 +1,27 @@
 [
   {
-    "name": "Invision",
-    "website": "www.invisionapp.com"
+    "name": "invision",
+    "website": "www.invisionapp.com",
+    "width": 120
   },
   {
-    "name": "GoCardless",
-    "website": "www.invisionapp.com"
+    "name": "badoo",
+    "website": "www.invisionapp.com",
+    "width": 140
   },
   {
-    "name": "Founders",
-    "website": "www.invisionapp.com"
+    "name": "founders",
+    "website": "www.invisionapp.com",
+    "width": 160
+  },
+  {
+    "name": "intelligent",
+    "website": "www.invisionapp.com",
+    "width": 160
+  },
+  {
+    "name": "adaptive",
+    "website": "www.invisionapp.com",
+    "width": 80
   }
 ]

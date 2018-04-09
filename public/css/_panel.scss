@@ -3,7 +3,7 @@
 	width: 100%;
 	background-color: white;
 	border: 1px solid #e5e5e5;
-	// box-shadow: 0 1px 5px rgba(00,00,00,0.05), 0 0 0 1px rgba(00,00,00,0.01);
+	box-shadow: 0 1px 5px rgba(00,00,00,0.05), 0 0 0 1px rgba(00,00,00,0.01);
 }
 
 .panel-basic {
@@ -16,5 +16,5 @@
 	text-align: center;
 	font-weight: 400;
 	color: colors("greyscale", 700);
-	margin-bottom: sizes(2);
+	margin-bottom: sizes(4);
 }

@@ -30,13 +30,16 @@
 		display: flex;
 
 		a {
-			@include uppercase(0.1em);
-			font-size: 13px;
+			font-size: 15px;
 			display: inline-block;
 			white-space: nowrap;
-			padding: sizes(4) sizes(5);
+			padding: sizes(4) 0;
 			color: colors("greyscale", 700);
 			position: relative;
+
+			&:not(:last-of-type) {
+				margin-right: sizes(6);
+			}
 
 			&:hover {
 				color: colors("greyscale", 900);

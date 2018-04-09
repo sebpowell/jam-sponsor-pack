@@ -8,139 +8,105 @@ block body
 	.navigation
 		.navigation-container
 			.navigation-links
-				a.is-active(href="#intro") Intro
-				a(href="#about") About
-				a(href="#2017") JAM 2017 Review
-				a(href="#packages") Jam 2018
-
+				a.is-active(href="#intro") About
+				a(href="#team") Team
+				a(href="#2017") Last year
+				a(href="#packages") Sponsorship
 			.navigation-cta
 				a.button.button-primary(href="#next") Get in touch
 
-	.container
-		.section(id="intro")
+
+	.section(id="intro")
+		.container
+			h2.section-heading.text-center.margin-bottom-5 Our story
+			
 			.intro-section
-				p Going on its 4th year, JAM provides a fantastic opportunity to expose your brand to a talented audience of some of London’s leading product managers, designers and founders / leading product teams 
+				p The idea for JAM originally came to us when we started working together at an early-stage startup a couple of years ago. We were building a complex product, and like many people at the start of their career, we learnt on the job – largely through trial and error. We often asked ourselves how other companies go about designing and building great products. What goes on behind the scenes? How do product managers, designers and engineers make it all happen?
+				
+				p We realised we really wanted to catch a glimpse of what went on behind the scenes of the companies we looked up to. And we thought other people would want to know too. So we decided to create a community to share these stories – JAM was born.
 
-				p We are looking for great companies that want to help us run an exceptional event – one that inspires, energises and educates/elevates/cultivates the best product teams in town. 
+	.section.background-white(id="team")
+		.container
+			.text-center
+				h2.section-heading.text-center.margin-bottom-3 Our team
+				.margin-bottom-8
+					p.section-subheading We're a team of passionate product people who care about helping others on their journey to build something great.
+			.columns.display-flex-above-md
+				.columns-4.display-flex
+					.team-profile.panel
+						.team-avatar(style="background-image: url(/public/img/mathilde.jpeg)")
+						h3.weight-bold Mathilde Leo
+						.label.label-green Organiser
+						p Freelance product manager. Previously Product Lead at Founders Factory and Product Manager at Deliveroo.
 
-				p And we want you in the spotlight – this is why we’ve designed an open sponsorship menu, leaving it to you to decide what suits you best / how you’d like to get involved.
+						.team-profile-social
+							a(href="https://twitter.com/Mathilde_Leo" target="_blank")
+								+icon({"name": "twitter", "class": ""})
+							a(href="https://www.linkedin.com/in/mathildeleo/" target="_blank")
+								.position-relative(style="top: -2px; left: 1px")
+									+icon({"name": "linkedin", "class": ""})
 
-				p If you wish to stand out from the crowd with a bespoke experience, of if you have an idea or concept you wish to discuss, just get in touch. We’ll work together to bring you the best results!
+				.columns-4.display-flex
+					.team-profile.panel
+						.team-avatar(style="background-image: url(/public/img/seb.jpeg)")
+						h3.weight-bold Seb Powell
+						.label.label-green Organiser
+						p Co-founder & CPO at GetAgent.co.uk. Previously Head of Design at Adbrain.
+						.team-profile-social
+							a(href="https://twitter.com/sebpowell" target="_blank")
+								+icon({"name": "twitter", "class": ""})
+							a(href="https://www.linkedin.com/in/sebastienpowell/" target="_blank")
+								.position-relative(style="top: -2px; left: 1px")
+									+icon({"name": "linkedin", "class": ""})
 
-		
-		.section.team-section(id="team")
-			h2.section-heading.text-center About
-
-			.sub-section
-				.columns.display-flex-above-md
-					.columns-4.display-flex-above-md
-						.panel.padding-6.text-center
-							.margin-bottom-3
-								.stat-icon
-									+icon({"name": "people"})
-							.caption.margin-bottom-2 Members
-							.text-5.margin-bottom-2 1,231 people
-					
-					.columns-4.display-flex-above-md
-						.panel.padding-6.text-center
-							.margin-bottom-3
-								.stat-icon
-									img(src="../public/img/mailchimp.png" width="30")
-							.caption.margin-bottom-2 Mailing list
-							.text-5.margin-bottom-2 1,835 subscribers
-							+verified()
-					
-					.columns-4.display-flex-above-md
-						.panel.padding-6.text-center
-							.margin-bottom-3
-								.stat-icon
-									+icon({"name": "twitter", "size": 25, "class": "fill-twitter"})
-							.caption.margin-bottom-2 Twitter
-							.text-5.margin-bottom-2 1,111 followers
-							+verified()
-
-
-			.sub-section.no-margin-bottom
-				h3.sub-section-heading Team
-				.columns.display-flex-above-md
-					.columns-4.display-flex
-						.team-profile.panel
-							.team-avatar(style="background-image: url(/public/img/mathilde.jpeg)")
-							h3 Mathilde Leo
-							.label.label-green Organiser
-							p Freelance product manager. Previously Product Lead at Founders Factory and Product Manager at Deliveroo.
-
-							.team-profile-social
-								a(href="https://twitter.com/Mathilde_Leo" target="_blank")
-									+icon({"name": "twitter", "class": ""})
-								a(href="https://www.linkedin.com/in/mathildeleo/" target="_blank")
-									.position-relative(style="top: -2px; left: 1px")
-										+icon({"name": "linkedin", "class": ""})
-
-					.columns-4.display-flex
-						.team-profile.panel
-							.team-avatar(style="background-image: url(/public/img/seb.jpeg)")
-							h3 Seb Powell
-							.label.label-green Organiser
-							p Co-founder & CPO at GetAgent.co.uk. Previously Head of Design at Adbrain.
-							.team-profile-social
-								a(href="https://twitter.com/sebpowell" target="_blank")
-									+icon({"name": "twitter", "class": ""})
-								a(href="https://www.linkedin.com/in/sebastienpowell/" target="_blank")
-									.position-relative(style="top: -2px; left: 1px")
-										+icon({"name": "linkedin", "class": ""})
-
-					.columns-4.display-flex
-						.team-profile.panel
-							.team-avatar(style="background-image: url(/public/img/sunil.jpeg)")
-							h3 Sunil Pitwha
-							.label.label-green MC
-							p Freelance product manager. Previously Product Lead at Founders Factory and Product Manager at Deliveroo
-							.team-profile-social
-								a(href="https://twitter.com/SunilUXD" target="_blank")
-									+icon({"name": "twitter", "class": ""})
-								a(href="https://www.linkedin.com/in/sunilpithwa/" target="_blank")
-									.position-relative(style="top: -2px; left: 1px")
-										+icon({"name": "linkedin", "class": ""})
+				.columns-4.display-flex
+					.team-profile.panel
+						.team-avatar(style="background-image: url(/public/img/sunil.jpeg)")
+						h3.weight-bold Sunil Pitwha
+						.label.label-green MC
+						p Freelance product manager. Previously Product Lead at Founders Factory and Product Manager at Deliveroo
+						.team-profile-social
+							a(href="https://twitter.com/SunilUXD" target="_blank")
+								+icon({"name": "twitter", "class": ""})
+							a(href="https://www.linkedin.com/in/sunilpithwa/" target="_blank")
+								.position-relative(style="top: -2px; left: 1px")
+									+icon({"name": "linkedin", "class": ""})
 
 
-		.section(id="2017")
-		
+	.section(id="2017")
+		.container
+
 			h2.section-heading.text-center.margin-bottom-10 Jam 2017 Review
 
 			.sub-section.no-border.no-padding-bottom
 				h3.sub-section-heading Stats
 				.columns.display-flex-above-md
 					.columns-4.display-flex-above-md
-						.panel.text-center.padding-6
+						.panel.text-center.padding-10
 							.caption.margin-bottom-2 Attendees
-							.stat= attendees.length
+							.stat 532
 							
 					.columns-4.display-flex-above-md
-						.panel.text-center.padding-6
+						.panel.text-center.padding-10
 							.caption.margin-bottom-2 Companies
-							.stat= companies.length
-							+verified()
+							.stat 202
 							
 					.columns-4.display-flex-above-md
-						.panel.text-center.padding-6
+						.panel.text-center.padding-10
 							.caption.margin-bottom-2 NPS
 							.stat 8.1
-							+verified()
-
-
 
 			.sub-section
-				h3.sub-section-heading Companies who attended
+				h3.sub-section-heading Attendee companies
 			
 				.attendees.columns
 					each attendee, i in attendees
-						if i <= 7
+						if i <= 11
 							.columns-3.display-flex
 
-								if i == 7
-									.attende.width-100.see-more.display-flex.flex-align-center.flex-justify-center
-										.text-5 + 145 more
+								if i == 11
+									.attende.width-100.see-more.display-flex.flex-align-center.flex-justify-center.background-greyscale-200.see-more(data-modal="attendees")
+										.text-5 + 195 more
 
 								else
 									.attendee.panel-basic.width-100
@@ -148,19 +114,33 @@ block body
 										.attendee-company-title= attendee.title
 										.attendee-company-name= attendee.company.toLowerCase()
 
+				//- .modal-container(id="attendees")
+				//- 	.modal
+				//- 		.modal-close
+				//- 			+icon({"name": "close"})
+				//- 			ul.attendees-list
+				//- 				each attendee in attendees
+				//- 					if attendee.company !== "(no value)" && attendee.title !== "(no value)"
+				//- 						li
+				//- 							.display-table
+				//- 								.display-table-cell.vertical-align-middle.padding-right-3
+				//- 									.company-logo(style="background-image: url(https://logo.clearbit.com/#{attendee.company.toLowerCase()}.com?s=128)")
+				//- 								.display-table-cell.vertical-align-middle
+				//- 									.attendee-company-name= attendee.company
+				//- 									.attendee-company-title.no-margin= attendee.title
+
 			.sub-section
-				h3.sub-section-heading Audience
+				h3.sub-section-heading Attendee stats
 			
 				.columns.display-flex-above-md.flex-wrap
-					.columns-4.display-flex
+					.columns-3.display-flex
 						.panel.graph
 							.text-center
 								.panel-title Type of role
-								.margin-bottom-5
-									+verified()
 
-							div.text-center.margin-auto(style="height: 150px; width: 150px")
-								canvas.display-inline-block(id="type" width="100" height="100")
+							.margin-bottom-4
+								div.text-center.margin-auto(style="height: 150px; width: 150px")
+									canvas.display-inline-block(id="type" width="100" height="100")
 
 							ul.legend
 								li.legend-1 
@@ -174,15 +154,14 @@ block body
 								li.legend-5 
 									.text Other (5%)
 					
-					.columns-4.display-flex
+					.columns-3.display-flex
 						.panel.graph
 							.text-center
 								.panel-title Years of experience
-								.margin-bottom-5
-									+verified()
 
-							div.text-center.margin-auto(style="height: 150px; width: 150px")
-								canvas.display-inline-block(id="experience" width="100" height="100")
+							.margin-bottom-4
+								div.text-center.margin-auto(style="height: 150px; width: 150px")
+									canvas.display-inline-block(id="experience" width="100" height="100")
 
 							ul.legend
 								li.legend-1 
@@ -192,14 +171,14 @@ block body
 								li.legend-3 
 									.text 0 - 3 years (15%)
 
-					.columns-4.display-flex
+					.columns-3.display-flex
 						.panel.graph
 							.text-center
 								.panel-title Type of company
-								.margin-bottom-5
-									+verified()
-							div.text-center.margin-auto(style="height: 150px; width: 150px")
-								canvas.display-inline-block(id="company" width="100" height="100")
+
+							.margin-bottom-4
+								div.text-center.margin-auto(style="height: 150px; width: 150px")
+									canvas.display-inline-block(id="company" width="100" height="100")
 
 							ul.legend
 								li.legend-1 
@@ -211,36 +190,14 @@ block body
 								li.legend-4 
 									.text Other (10%)
 
-
-					.columns-4.display-flex
-						.panel.graph
-							.text-center
-								.panel-title Industry
-								.margin-bottom-5
-									+verified()
-							div.text-center.margin-auto(style="height: 150px; width: 150px")
-								canvas.display-inline-block(id="industry" width="100" height="100")
-
-							ul.legend
-								li.legend-1 
-									.text Internet Software &amp; Services (75%)
-								li.legend-2 
-									.text Professional Services (10%)
-								li.legend-3 
-									.text Diversified Financial Services (6%)
-								li.legend-4 
-									.text Media (10%)
-								li.legend-4 
-									.text Consumer Staples (10%)	
-
-					.columns-4.display-flex
+					.columns-3.display-flex
 						.panel.graph
 							.text-center
 								.panel-title Seniority
-								.margin-bottom-5
-									+verified()
-							div.text-center.margin-auto(style="height: 150px; width: 150px")
-								canvas.display-inline-block(id="seniority" width="100" height="100")
+
+							.margin-bottom-4
+								div.text-center.margin-auto(style="height: 150px; width: 150px")
+									canvas.display-inline-block(id="seniority" width="100" height="100")
 
 							ul.legend
 								li.legend-1 
@@ -251,195 +208,165 @@ block body
 									.text Executive (11%)									
 
 
-				//- .modal-container(id="attendees")
-				//- 	.modal
-				//- 		.modal-close
-				//- 			+icon({"name": "close"})
-				//- 		.tabs
-				//- 			.tabs-navigation
-				//- 				a.is-active(href="1") People
-				//- 				a(href="1") Companies
-							
-				//- 			.tabs-content.is-open
-				//- 				ul.attendees-list
-				//- 					each attendee in attendees
-				//- 						li
-				//- 							.display-table
-				//- 								.display-table-cell.vertical-align-middle.padding-right-3
-				//- 									.company-logo(style="background-image: url(https://logo.clearbit.com/#{attendee.company.toLowerCase()}.com?s=128)")
-				//- 								.display-table-cell.vertical-align-middle
-				//- 									.attendee-company-name= attendee.company
-				//- 									.attendee-company-title.no-margin= attendee.title
-
-				//- 			.tabs-content
-				//- 				.modal-body
-				//- 					.columns
-				//- 						each company in companies
-				//- 							.columns-4
-				//- 								.company-logo(style="background-image: url(https://logo.clearbit.com/#{company.toLowerCase()}.com?s=128)")
-				//- 								.attendee-company-name= company
-
 			.sub-section
 				h3.sub-section-heading Photos &amp; Videos
 
-				.video.large-video.margin-bottom-6(data-modal="video-1")
+				a.video.large-video(href="https://www.youtube.com/watch?v=VRpTJXBRiXk" target="_blank")
 					.video-thumb(style="background-image: url(https://cdn.jamlondon.io/photos/conference/2017/190.jpg)")
 						.video-play
 							+icon({"name": "play"})
-
-					.video-title JAM 2017 After-movie
-
-					.modal-container(id="video-1")
-						.modal
-							//- iframe(src="https://youtu.be/N_Hefna0Qqk")
-
-				//- .columns
-				//- 	each video, i in videos
-				//- 		if i <= 2
-				//- 			.columns-4
-				//- 				.video(data-modal="video-#{i}")
-				//- 					.video-thumb(style="background-image: url(https://cdn.jamlondon.io/photos/conference/2017/#{video.background}.jpg)")
-				//- 						.video-play
-				//- 							+icon({"name": "play"})
-				//- 					.video-title= video.title 
-				//- 					.video-speaker= video.name + "– " + video.position + ", " + video.company
-
-				//- 		.modal-container(id="video-#{i}")
-				//- 			.modal
-				//- 				//- iframe(style="width: 100%" src="https://www.youtube.com/embed/#{video.video}" height="400" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen)
-									
-	
-				//- .text-center
-				//- 	a.link(href="https://www.youtube.com/channel/UC6IZvZHymtDYaucmkU0pEog" target="_blank") See more videos
-
 				
 				.columns
-					- for (var i = 1; i < 5; i++)
+					- for (var i = 62; i < 70; i++)
 						.columns-3
-							if i == 4
-								.photo.see-more(style="background-image: url(https://cdn.jamlondon.io/photos/conference/2017/#{i}.jpg)")
+							if i == 69
+								.photo.see-more(style="background-image: url(https://cdn.jamlondon.io/photos/conference/2017/0#{i}.jpg)")
 									a.content(href="https://www.facebook.com/pg/makingjam/photos/?tab=album&album_id=2209087595784228" target="_blank")
 										| + 245 more
 							else
-								.photo(style="background-image: url(https://cdn.jamlondon.io/photos/conference/2017/#{i}.jpg)")
+								.photo(style="background-image: url(https://cdn.jamlondon.io/photos/conference/2017/0#{i}.jpg)")
 
 			.sub-section
-				h3.sub-section-heading Tweets
+				h3.sub-section-heading Testimonials
 
 				.columns.display-flex.flex-wrap
-					each tweet, i in tweets
-						if i <= 2
-							.columns-4.display-flex.margin-bottom-4
-								.panel-basic.tweet
+					each t in testimonials
+						.columns-4.display-flex.margin-bottom-4
+							.panel-basic.testimonial
+								// .tweet-date= t.date
+								//- a.tweet-text(href="#{tweet.link}" target="_blank")
+								p.testimonial-text= t.text
+								.testimonial-name= t.name
+								.testimonial-position= t.position
 
-									+icon({"name": "twitter", "class": "tweet-icon"})
-									.tweet-date= tweet.date
-									a.tweet-text(href="#{tweet.link}" target="_blank")
-										p= tweet.text
-									.tweet-handle= tweet.handle
-				
+
+				.panel.padding-8.text-center
+					.max-width-600.margin-auto
+						p.text-7.text-brand 77% of attendees said the conference was 'better' or 'way better' than similar events.
+			
 			.sub-section.no-margin
 				h3.sub-section-heading Sponsors
 				.columns.display-flex-above-md.flex-wrap
 					each sponsor in sponsors
 						.columns-3.display-flex-above-md
 							.panel.padding-10.text-center.display-flex.flex-align-center.flex-justify-center
-								img(src="../public/img/sponsors/#{sponsor.name}.png" width="150")
+								img(src="../public/img/sponsors/#{sponsor.name}.png" width="#{sponsor.width}px")
 
 
-		.section(id="packages")
-
-			h2.section-heading.text-center.margin-bottom-8 Jam 2018
-
-			.sub-section
-				h3.sub-section-heading Details
-
-				//- .columns
-				//- 	.columns-3
-				//- 		.panel.padding-6.text-center
-				//- 			.title
-				//- 			.stat 600
+	.section(id="packages")
+		.container
+			h2.section-heading.text-center.margin-bottom-8 Sponsorship opportunities
 
 			.sub-section
+				.columns
+					.columns-6
+						.large-para
+							p Going on its 4th year, JAM provides a fantastic opportunity to expose your brand to a talented audience of some of London’s leading product managers, designers and founders / leading product teams 
 
-				h3.sub-section-heading Speakers
+							p We are looking for great companies that want to help us run an exceptional event – one that inspires, energises and educates/elevates/cultivates the best product teams in town. 
+
+							p And we want you in the spotlight – this is why we’ve designed an open sponsorship menu, leaving it to you to decide what suits you best / how you’d like to get involved.
+
+					.columns-6
+						.background-white.padding-10.panel-basic
+							.margin-bottom-5
+								h4.margin-bottom-2.weight-medium.small-heading Date
+								.text-4 1st November 2018
+
+							.margin-bottom-5
+								h4.margin-bottom-2.weight-medium Capacity
+								.text-4 650
+
+							.margin-bottom-5
+								h4.margin-bottom-2.weight-medium  Venue
+								.text-4 Hawker house
+
+							a.button.button-primary(href="https://www.jamlondon.io/conferences/2018" target="_blank") See more details
 
 			.sub-section
+
+				h3.sub-section-heading Why sponsor?
+
+				.columns
+					.columns-4
+						.panel.padding-8
+							h2.weight-bold.text-brand.margin-bottom-2 Grow your team
+							p Finding great people is hard. Our community is made up of some of the best designers, engineers and product people in London. Make sure they know you’re hiring!
+					.columns-4
+						.panel.padding-8
+							h2.weight-bold.text-brand.margin-bottom-2 Show off your company
+							p Our attendees are always on the hunt for new products and services to help them do things better. Most of the crowd are senior decision-makers so you’ll be in front of the right people.
+					.columns-4
+						.panel.padding-8
+							h2.weight-bold.text-brand.margin-bottom-2 Champion the creation of great products
+							p Help passionate creators learn from the best and from each other and contribute to making impactful products happen.
+
+			.sub-section.no-margin-bottom
 
 				h3.sub-section-heading Packages
 
 				.panel.package-container
-					.core-package
-						h2 Core package
-						.core-price £5000 + VAT
-						
-						ul.package-features
-							li 
-								+icon({"name": "tick"})
-								| Logo placement on our website
-							li 
-								+icon({"name": "tick"})
-								| Logo placement in event introduction deck
-							li
-								+icon({"name": "tick"})
-								| Logo placement in all pre-event emails to attendees
-							li 
-								+icon({"name": "tick"})
-								| Minimum 3 social media mentions
-							li 
-								+icon({"name": "tick"})
-								| Dedicated introduction of your company by our MC
-							li
-								+icon({"name": "tick"})
-								| Feature in our attendee booklet - 1 A5 page (include example)
-							li
-								+icon({"name": "tick"})
-								| 1 ticket (worth £350 each)
+					.core-package.clearfix
+						.left
+							.margin-bottom-3
+								h2 Core package
+							.core-price £5000 + VAT
+							
+							ul.package-features
+								li 
+									+icon({"name": "tick"})
+									| Logo placement on our website
+								li 
+									+icon({"name": "tick"})
+									| Logo placement in event introduction deck
+								li
+									+icon({"name": "tick"})
+									| Logo placement in all pre-event emails to attendees
+								li 
+									+icon({"name": "tick"})
+									| Minimum 3 social media mentions
+								li 
+									+icon({"name": "tick"})
+									| Dedicated introduction of your company by our MC
+								li
+									+icon({"name": "tick"})
+									| Feature in our attendee booklet - 1 A5 page
+								li
+									+icon({"name": "tick"})
+									| 1 ticket (worth £350 each)
 
-							li
-								+icon({"name": "tick"})
-								| 30% discount on all additional tickets
-							li
-								+icon({"name": "tick"})
-								| Access to attendee list before the event
+								li
+									+icon({"name": "tick"})
+									| 30% discount on all additional tickets
+								li
+									+icon({"name": "tick"})
+									| Access to attendee list before the event
+						.right
+							h2.margin-bottom-5 Extras
+							.extras-list
+							
+								each package in extras
+									.package
+										.display-table.width-100
+											.display-table-cell
+												.package-title= package.name
+												if package.description
+													//- .package-description= package.description
+												//- .package-link See example
+												//- .package-quantity.margin-bottom-4 1 of 3 left
+											if package.status !== 0
 
-			
-			.sub-section.no-margin-bottom
-				.extras.no-padding
-					
-					h3.sub-section-heading Extras
-					
-					.extras-list.display-flex.columns.no-padding
-						each package in extras
-							.columns-4.display-flex
-								.panel.padding-5
-									if package.status === 0
-										//- .package-sold-out Sold out
-
-									.display-table.width-100
-										.display-table-cell
-											.package-title= package.name
-											if package.description
-												//- .package-description= package.description
-											//- .package-link See example
-											.package-quantity.margin-bottom-4 1 of 3 left
-										if package.status !== 0
 											.display-table-cell.text-right
 												.package-price= "£"+ package.price
 
-									.progress-bar
-										.progress-bar-status
+	.section.background-white(id="next")
+		.text-center
+			h2.section-heading.text-center.margin-bottom-3 Next steps
 
+			.margin-bottom-5
+				p.section-subheading Sponsorship slots are limited and available on a first-come, first-served basis. Schedule a call to discuss your goals with Mathilde.
 
-		.section.no-border.no-padding-bottom(id="next")
-			.section.panel.no-border
-				.text-center
-					h2.section-heading.text-center.margin-bottom-3 Next steps
-
-					.margin-bottom-5
-						p.section-subheading Sponsorship slots are limited and available on a first-come, first-served basis. Schedule a call to discuss your goals with Mathilde.
-
-					a.button.button-large.button-primary.margin-bottom-3(href="https://calendly.com/jam-sponsorship" target="_blank") Let's have a chat!
+			a.button.button-large.button-primary.margin-bottom-3(href="https://calendly.com/jam-sponsorship" target="_blank") Let's have a chat!
 
 
 	footer.footer

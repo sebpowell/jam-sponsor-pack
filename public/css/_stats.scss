@@ -40,20 +40,20 @@
 			line-height: 1;
 			font-weight: 300;
 			color: colors("brand");
-			margin-bottom: sizes(2);
+			// margin-bottom: sizes(2);
 		}
 
 .caption {
 	@include uppercase(0.1em);
-	font-size: 12px;
+	font-size: 13px;
 	// margin-bottom: sizes(2);
-	color: colors("greyscale", 500);
+	color: colors("greyscale", 700);
 }
 
 
 
 .graph {
-	padding: sizes(5);
+	padding: sizes(8);
 	margin: 0;
 }
 
@@ -72,55 +72,5 @@
 }
 
 
-.legend {
-	@include no-bullet();
 
-	li {
-		font-size: 14px;
-		padding: sizes(3) 0;
-		position: relative;
-		
-		.text {
-			color: colors("greyscale", 900);
-			display: inline-block;
-		}
-
-		&:before {
-			content: "";
-			@include circle(10px);
-			display: inline-block;
-			background-color: currentColor;
-			margin-right: sizes(1);
-		}
-
-		&:not(:last-of-type) {
-			border-bottom: 1px solid colors("keyline");
-		}
-
-		&:last-of-type {
-			padding-bottom: 0;
-		}
-	}
-}
-
-
-.legend-1 {
-	color: #14a6ff;
-}
-
-.legend-2 {
-	color: #6abcf9;
-}
-
-.legend-3 {
-	color: #98d1fb;
-}
-
-.legend-4 {
-	color: #cae8fd;
-}
-
-.legend-5 {
-	color: #e0f2fe;
-}
 

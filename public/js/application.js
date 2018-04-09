@@ -7,7 +7,7 @@ $(document).ready(function() {
 	var ctx = document.getElementById("type");
 
 	var options = {
-		cutoutPercentage: 70,
+		cutoutPercentage: 60,
 		legend: {
         	display: false,
         },
@@ -26,11 +26,11 @@ $(document).ready(function() {
 	    datasets: [{
 	        data: [40, 30, 15, 10, 5],
 	        backgroundColor: [
-                "#14a6ff",
-                "#6abcf9",
-                "#98d1fb",
-                "#cae8fd",
-                "#e0f2fe"
+                "#132de7",
+                "#28bf54",
+                "#fec919",
+                "#e25e04",
+                "#fe2c78"
 	        ]
 	    }]
 	};
@@ -52,9 +52,11 @@ $(document).ready(function() {
 	    datasets: [{
 	        data: [60, 25, 15],
 	        backgroundColor: [
-                "#14a6ff",
-                "#6abcf9",
-                "#98d1fb"
+                "#132de7",
+                "#28bf54",
+                "#fec919",
+                "#e25e04",
+                "#fe2c78"
 	        ]
 	    }]
 	};
@@ -77,39 +79,11 @@ $(document).ready(function() {
 	    datasets: [{
 	        data: [40, 30, 20, 10],
 	        backgroundColor: [
-                "#14a6ff",
-                "#6abcf9",
-                "#98d1fb",
-                "#cae8fd",
-                "#e0f2fe"
-	        ]
-	    }]
-	};
-
-	var myDoughnutChart = new Chart(ctx, {
-	    type: 'doughnut',
-	    data: data,
-	    options: options
-	});
-
-	var ctx = document.getElementById("industry");
-
-	var data = {
-	    labels: [
-	        "Internet Software & Services",
-	        "Professional Services",
-	        "Diversified Financial Services",
-	        "Media",
-	        "Consumer Staples"
-	    ],
-	    datasets: [{
-	        data: [75, 10, 6, 10, 10],
-	        backgroundColor: [
-                "#14a6ff",
-                "#6abcf9",
-                "#98d1fb",
-                "#cae8fd",
-                "#e0f2fe"
+                "#132de7",
+                "#28bf54",
+                "#fec919",
+                "#e25e04",
+                "#fe2c78"
 	        ]
 	    }]
 	};
@@ -131,9 +105,11 @@ $(document).ready(function() {
 	    datasets: [{
 	        data: [69, 19, 11],
 	        backgroundColor: [
-                "#14a6ff",
-                "#6abcf9",
-                "#98d1fb"
+                "#132de7",
+                "#28bf54",
+                "#fec919",
+                "#e25e04",
+                "#fe2c78"
 	        ]
 	    }]
 	};
@@ -150,6 +126,8 @@ $(document).ready(function() {
 		var target = $(this).data('modal');
 		$("#"+target).addClass("is-open");
 		$("body").addClass("overflow-hidden");
+
+		alert("test");
 	});
 
 	function closeModal() {

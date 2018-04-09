@@ -7,7 +7,20 @@
 }
 
 .core-package {
-	padding: sizes(5);
+
+	.left {
+		width: 50%;
+		padding: sizes(10);
+		float: left;
+	}
+
+	.right {
+		width: 50%;
+		padding: sizes(10);
+		float: left;
+		overflow-y: scroll;
+		background-color: colors("greyscale", 50);
+	}
 	
 	h2 {
 		color: colors("brand");
@@ -24,13 +37,14 @@
 		@include clearfix();
 		display: flex;
 		flex-wrap: wrap;
+
 		> li {
-			width: 50%;
+			display: block;
 			margin-bottom: sizes(4);
 
 			svg {
-				width: 25px;
-				height: 25px;
+				width: 30px;
+				height: 30px;
 				fill: colors("secondary");
 				vertical-align: middle;
 				display: inline-block;
@@ -129,24 +143,26 @@
 
 	display: flex;
 	flex-wrap: wrap;
-	padding: sizes(6);
-	padding-top: 0;
+
+
 
 	.package-price {
 		// border: 1px solid rgba(colors("brand"), 0.3);
-		color: white;
+
 		display: inline-block;
 		right: 0;
-		font-size: 15px;
+		font-size: 18px;
+		font-weight: 500;
 		border-radius: 2px;
 		line-height: 1;
-		color: colors("brand");
-		padding: sizes(1) sizes(1);
+	
 	}
 
 	.package-title {
 		margin-bottom: sizes(1);
-		font-size: 15px;
+		font-size: 18px;
+		color: colors("brand");
+		font-weight: 500;
 	}
 
 	.package-description {
@@ -161,11 +177,13 @@
 		overflow: hidden;
 		// background: colors("greyscale", 50);
 		// border: 1px solid colors("keyline");
-		box-shadow: 0 1px 1px rgba(00,00,00,0.1), 0 0 0 1px rgba(00,00,00,0.03);
-		border-radius: 3px;
-		// border-right: 1px solid colors("keyline");
+		// box-shadow: 0 1px 1px rgba(00,00,00,0.1), 0 0 0 1px rgba(00,00,00,0.03);
+		// border-radius: 3px;
+		&:not(:last-child) {
+			border-bottom: 1px solid colors("keyline");
+
+		}
 		// width: 33.33%;
-		display: flex;
-		padding: sizes(4);
+		padding: sizes(4) 0;
 	}
 }

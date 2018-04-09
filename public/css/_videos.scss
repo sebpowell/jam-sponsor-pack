@@ -5,22 +5,10 @@
 	transition: all .25s;
 	position: relative;
 
-	padding-bottom: sizes(6);
-
-	&:after {
-		position: absolute;
-		bottom: 0;
-		content: "";
-		height: 2px;
-		width: 0;
-		background-color: colors("brand");
-		transition: all .25s;
-	}
-
 	&.large-video {
 
 		.video-thumb {
-			height: 550px;
+			height: 450px;
 		}
 	}
 
