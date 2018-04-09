@@ -29,7 +29,7 @@ gulp.task("jade", function() {
 			videos: JSON.parse( fs.readFileSync('./views/videos.json') ),
 		}
 	}))
-	.pipe(gulp.dest("./jamlondon"));
+	.pipe(gulp.dest("."));
 });
 
 /////////////////////////////////////////////////////
