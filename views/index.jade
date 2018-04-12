@@ -64,7 +64,7 @@ block body
 						.team-avatar(style="background-image: url(/public/img/sunil.jpeg)")
 						h3.weight-bold Sunil Pitwha
 						.label.label-green MC
-						p Freelance product manager. Previously Product Lead at Founders Factory and Product Manager at Deliveroo
+						p Senior UX designer at Aviva and London organiser of Design Jam. BBQ enthusiast.
 						.team-profile-social
 							a(href="https://twitter.com/SunilUXD" target="_blank")
 								+icon({"name": "twitter", "class": ""})
@@ -110,7 +110,7 @@ block body
 
 								else
 									.attendee.panel-basic.width-100
-										.company-logo(style="background-image: url(https://logo.clearbit.com/#{attendee.domain}?s=128)")
+										.company-logo(style="background-image: url(https://logo.clearbit.com/#{attendee.domain}?s=128) !important")
 										.attendee-company-title= attendee.title
 										.attendee-company-name= attendee.company.toLowerCase()
 
@@ -127,7 +127,9 @@ block body
 										li
 											.display-table
 												.display-table-cell.vertical-align-middle.padding-right-3
-													.company-logo.no-margin(style="background-image: url(https://logo.clearbit.com/#{attendee.company.toLowerCase()}.com?s=128)")
+													.company-logo.no-margin
+														.logo(style="background-image: url(https://logo.clearbit.com/#{attendee.company.toLowerCase()}.com?s=128)")
+														.placeholder
 												.display-table-cell.vertical-align-middle
 													.attendee-company-title= attendee.title
 													.attendee-company-name= attendee.company
@@ -319,7 +321,7 @@ block body
 						.left
 							.margin-bottom-3
 								h2 By sponsoring JAM, you get:
-							.core-price £5000 + VAT
+							.core-price £4000 + VAT
 
 							ul.package-features
 								li 

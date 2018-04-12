@@ -2110,7 +2110,11 @@ img { max-width: 100%; }
 
 .attendees .see-more:hover { color: #424242; cursor: pointer; }
 
-.company-logo { width: 60px; height: 60px; border-radius: 60px; background-repeat: no-repeat; background-position: center; background-size: cover; background-color: white; margin: 0 auto 15px; border: 1px solid #ececec; }
+.company-logo { width: 60px; height: 60px; border-radius: 60px; background-repeat: no-repeat; background-position: center; background-size: cover; position: relative; margin: 0 auto 15px; border: 1px solid #ececec; }
+
+.company-logo .logo { width: 58px; height: 58px; border-radius: 58px; background-repeat: no-repeat; background-position: center; background-size: cover; position: relative; z-index: 2; }
+
+.company-logo .placeholder { width: 58px; height: 58px; border-radius: 58px; content: ""; background-repeat: no-repeat; background-size: 25px; background-position: 16px 15px; position: absolute; top: 0; left: 0; z-index: 1; background-image: url("/public/img/icons/company.png"); }
 
 .attendee-company-title { font-size: 15px; text-transform: capitalize; margin-bottom: 8px; }
 
@@ -2121,8 +2125,6 @@ img { max-width: 100%; }
 .attendees-list > li { line-height: inherit; }
 
 .attendees-list > li { border-bottom: 1px solid #ececec; padding: 15px 25px; }
-
-.attendees-list > li .company-logo { width: 50px; height: 50px; border-radius: 50px; }
 
 .button { display: inline-block; border-radius: 100px; cursor: pointer; height: 40px; line-height: 40px; padding: 0 25px; }
 
