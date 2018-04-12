@@ -1,50 +1,53 @@
 [
 	{
-		"name": "Speaking slot",
-		"qty": 1,
-		"price": 6000
-	},
-	{
 		"name": "Sponsors lounge spot",
-		"qty": 4,
-		"price": 3600
+		"qty": 3,
+		"stock": 2,
+		"price": 3000,
+		"link": "sdfg"
 	},
 	{
 		"name": "Promotional item or flyer in goodie bag",
 		"qty": 4,
-		"price": 1000
+		"stock": 0,
+		"price": 500
 	},
 	{
 		"name": "Sponsored attendee experience",
-		"description": "Charging station, branded cupcakes.",
 		"qty": 3,
-		"price": 1200,
+		"stock": 3,
+		"price": 1500,
 		"status": 0
 	},
 	{
 		"name": "After-party photo booth",
 		"qty": 1,
+		"stock": 0,
 		"price": 1800
 	},
 	{
-		"name": "Demo slot / video",
+		"name": "Demo slot or video",
 		"qty": 1,
-		"price": 2600
+		"stock": 1,
+		"price": 2000
+	},
+	{
+		"name": "Branded photo booth",
+		"qty": 1,
+		"stock": 1,
+		"price": 2000
 	},
 
 	{
-		"name": "Pre-event email to all attendees ",
+		"name": "Dedicated email to all attendees pre or post event",
 		"qty": 1,
-		"price": 1200
+		"stock": 1,
+		"price": 1500
 	},
 	{
-		"name": "Post-event email to all attendees",
-		"qty": 1,
-		"price": 1200
-	},
-	{
-		"name": "Invitation to our Speaker dinner",
-		"qty": 1,
-		"price": 5000
+		"name": "Additional page in attendee booklet",
+		"qty": 2,
+		"stock": 2,
+		"price": 500
 	}
 ]

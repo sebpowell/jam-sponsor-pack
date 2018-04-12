@@ -23,5 +23,25 @@
     "name": "adaptive",
     "website": "www.invisionapp.com",
     "width": 80
+  },
+  {
+    "name": "twilio",
+    "website": "www.invisionapp.com",
+    "width": 140
+  },
+  {
+    "name": "wizeline",
+    "website": "www.invisionapp.com",
+    "width": 140
+  },
+  {
+    "name": "deliveroo",
+    "website": "www.invisionapp.com",
+    "width": 140
+  },
+  {
+    "name": "gocardless",
+    "website": "www.invisionapp.com",
+    "width": 140
   }
 ]

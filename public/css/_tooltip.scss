@@ -3,13 +3,16 @@
 	position: relative;
 	cursor: pointer;
 
+	color: colors("greyscale", 500);
+
+
 	.tooltip-content {
 		border-radius: 3px;
 		position: absolute;
 		background: colors("greyscale", 900);
 		visibility: hidden;
 		opacity: 0;
-		width: 150px;
+		width: 200px;
 		left: 50%;
 		margin: auto;
 		transform: translateX(-50%) translateY(10px) scale(0.98);
@@ -23,15 +26,19 @@
 		transition: all .25s;
 
 		&:before {
-			@include arrow("up", colors("greyscale", 900), 10px);
+			@include arrow("up", colors("greyscale", 900), 5px);
 			position: absolute;
 			left: 50%;
-			top: -10px;
-			margin-left: -10px;
+			top: -5px;
+			margin-left: -5px;
 		}
 	}
 
 	&:hover {
+		color: colors("brand");
+		text-decoration: underline;
+		text-underline-position: under;
+
 		.tooltip-content {
 			visibility: visible;
 			opacity: 1;

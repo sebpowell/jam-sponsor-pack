@@ -4,8 +4,6 @@ $(document).ready(function() {
 		var target = $(this).data('modal');
 		$("#"+target).addClass("is-open");
 		$("body").addClass("overflow-hidden");
-
-		alert("test");
 	});
 
 	function closeModal() {
@@ -13,7 +11,7 @@ $(document).ready(function() {
 		$("body").removeClass("overflow-hidden");
 	}
 
-	$(".new-modal-close").on('click', function() {
+	$(".modal-close").on('click', function() {
 		closeModal();
 	});
 

@@ -1,5 +1,5 @@
 .label {
-	font-size: 11px;
+	font-size: 12px;
 	font-weight: 500;
 	padding: 4px 6px 4px 6px;
 	border-radius: 3px;
@@ -7,11 +7,10 @@
 	line-height: 1;
 	min-width: 50px;
 	border: 1px solid;
-	border-color: currentColor;
 	display: inline-block;
 
 	&.label-green {
-		border-color: rgba(colors("secondary"), 0.4);
-		color: colors("secondary");
+		background-color: colors("secondary");
+		color: white;
 	}
 }

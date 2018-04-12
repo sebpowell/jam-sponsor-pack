@@ -53,8 +53,7 @@
 	margin: 0 auto;
 	border-radius: 3px;
 	background: white;
-	max-height: calc(100vh - 20px);
-	overflow-y: scroll;
+	
 	min-height: 500px;
 	box-shadow: 0 0 6px rgba(0,0,0,0.4);
 	transition: all .5s;
@@ -62,6 +61,27 @@
 	transform: scale(0.9);
 	
 	.modal-body {
-		padding: sizes(10);
+		// padding: sizes(10);
+		max-height: calc(100vh - 100px);
+		overflow-y: scroll;
+	}
+
+	.modal-header {
+		border-bottom: 1px solid colors("keyline");
+		padding-left: sizes(6);
+		height: 60px;
+		position: relative;
+		border-radius: 3px 3px 0 0;
+		background-color: colors("greyscale", 200);
+
+		h2 {
+			font-size: 18px;
+			font-weight: 500;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			margin: 0;
+			line-height: 1;
+		}
 	}
 }

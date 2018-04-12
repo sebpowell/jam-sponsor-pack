@@ -1,80 +1,88 @@
 .navigation {
-	position: fixed;
-	background-color: white;
-	z-index: 5;
-	top: 0;
-	width: 100%;
-	box-shadow: 0 1px 5px rgba(00,00,00,0.1);
+	display: none; 
 
-	text-align: center;
-
-	transform: translateY(-100px);
-	transition: all .25s;
-	overflow-y: scroll;
-	display: flex;
-
-	&.is-visible {
-		transform: translateY(0);
-	}
-
-	.navigation-container {
-		max-width: 1200px;
+	@include if-above("md") {
+		position: fixed;
+		background-color: white;
+		z-index: 5;
+		top: 0;
+		height: 50px;
 		width: 100%;
-		margin: 0 auto;
+		box-shadow: 0 1px 5px rgba(00,00,00,0.1);
+
+		text-align: center;
+
+		transform: translateY(-100px);
+		transition: all .25s;
+		overflow-y: scroll;
 		display: flex;
-		padding: 0 sizes(3);
-		align-items: center;
-	}
 
-	.navigation-links {
-		display: flex;
+		&.is-visible {
+			transform: translateY(0);
+		}
 
-		a {
-			font-size: 15px;
-			display: inline-block;
-			white-space: nowrap;
-			padding: sizes(4) 0;
-			color: colors("greyscale", 700);
-			position: relative;
+		.navigation-container {
+			max-width: 1200px;
+			width: 100%;
+			margin: 0 auto;
+			display: flex;
+			flex-wrap: nowrap;
+			overflow-x: scroll;
+			padding: 0 sizes(3);
+			align-items: center;
+		}
 
-			&:not(:last-of-type) {
-				margin-right: sizes(6);
-			}
+		.navigation-links {
+			display: flex;
+			margin-right: sizes(4);
 
-			&:hover {
-				color: colors("greyscale", 900);
-			}
+			a {
+				font-size: 15px;
+				display: inline-block;
+				white-space: nowrap;
+				padding: sizes(4) 0;
+				color: colors("greyscale", 700);
+				position: relative;
 
-			&.is-active {
-				color: colors("brand");
-				font-weight: bold;
-				&:after {
-					content: "";
-					background-color: colors("brand");
-					width: 100%;
-					height: 1px;
-					left: 0;
-					position: absolute;
-					bottom: 0;
+				&:not(:last-of-type) {
+					margin-right: sizes(6);
+				}
+
+				&:hover {
+					color: colors("greyscale", 900);
+				}
+
+				&.is-active {
+					color: colors("brand");
+					font-weight: bold;
+					&:after {
+						content: "";
+						background-color: colors("brand");
+						width: 100%;
+						height: 1px;
+						left: 0;
+						position: absolute;
+						bottom: 0;
+					}
 				}
 			}
 		}
-	}
 
-	.navigation-cta {
-		margin-left: auto;
-	}
+		.navigation-cta {
+			margin-left: auto;
+			display: flex;
+		}
 
-	.logo {
-		@include circle(60px);
-		background-color: white;
-		box-shadow: 0 1px 1px rgba(00,00,00,0.15);
-		background-image: url("/public/img/logo.png");
-		background-size: 70%;
-		background-position: center;
-		background-repeat: no-repeat;
-		z-index: 2;
-		margin-right: sizes(5);
+		.logo {
+			@include circle(60px);
+			background-color: white;
+			box-shadow: 0 1px 1px rgba(00,00,00,0.15);
+			background-image: url("/public/img/logo.png");
+			background-size: 70%;
+			background-position: center;
+			background-repeat: no-repeat;
+			z-index: 2;
+			margin-right: sizes(5);
+		}
 	}
-
 }

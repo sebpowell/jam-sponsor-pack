@@ -36,21 +36,3 @@
 	}
 }
 
-.testimonial {
-	padding: sizes(8);
-
-	.testimonial-text {
-		margin-bottom: sizes(3);
-	}
-
-	.testimonial-name {
-		color: colors("brand");
-		font-weight: 600;
-		margin-bottom: sizes(1);
-	}
-
-	.testimonial-position {
-		color: colors("greyscale", 600);
-		font-size: 13px;
-	}
-}

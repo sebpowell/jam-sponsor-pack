@@ -1,0 +1,26 @@
+.testimonial {
+	padding: sizes(8);
+
+	.testimonial-text {
+		margin-bottom: sizes(4);
+		font-style: italic;
+		font-size: 18px;
+	}
+
+	.testimonial-name {
+		color: colors("brand");
+		font-weight: 600;
+		margin-bottom: sizes(1);
+	}
+
+	.testimonial-position {
+		color: colors("greyscale", 600);
+		font-size: 14px;
+	}
+
+	.testimonial-avatar {
+		@include background-image();
+		@include circle(40px);
+		// background: grey;
+	}
+}

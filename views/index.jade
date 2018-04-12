@@ -5,15 +5,15 @@ block body
 		h1 Jam 2018 Sponsorship Pack
 		.masthead-logo
 
-	.navigation
-		.navigation-container
-			.navigation-links
-				a.is-active(href="#intro") About
-				a(href="#team") Team
-				a(href="#2017") Last year
-				a(href="#packages") Sponsorship
-			.navigation-cta
-				a.button.button-primary(href="#next") Get in touch
+	//- .navigation
+	//- 	.navigation-container
+	//- 		.navigation-links
+	//- 			a.is-active(href="#intro") About
+	//- 			a(href="#team") Team
+	//- 			a(href="#2017") Last year
+	//- 			a(href="#packages") Sponsorship
+	//- 		.navigation-cta
+	//- 			a.button.button-primary(href="#next") Get in touch
 
 
 	.section(id="intro")
@@ -97,7 +97,7 @@ block body
 							.stat 8.1
 
 			.sub-section
-				h3.sub-section-heading Attendee companies
+				h3.sub-section-heading Attendees
 			
 				.attendees.columns
 					each attendee, i in attendees
@@ -106,7 +106,7 @@ block body
 
 								if i == 11
 									.attende.width-100.see-more.display-flex.flex-align-center.flex-justify-center.background-greyscale-200.see-more(data-modal="attendees")
-										.text-5 + 195 more
+										.text-5 + 521 more
 
 								else
 									.attendee.panel-basic.width-100
@@ -114,20 +114,23 @@ block body
 										.attendee-company-title= attendee.title
 										.attendee-company-name= attendee.company.toLowerCase()
 
-				//- .modal-container(id="attendees")
-				//- 	.modal
-				//- 		.modal-close
-				//- 			+icon({"name": "close"})
-				//- 			ul.attendees-list
-				//- 				each attendee in attendees
-				//- 					if attendee.company !== "(no value)" && attendee.title !== "(no value)"
-				//- 						li
-				//- 							.display-table
-				//- 								.display-table-cell.vertical-align-middle.padding-right-3
-				//- 									.company-logo(style="background-image: url(https://logo.clearbit.com/#{attendee.company.toLowerCase()}.com?s=128)")
-				//- 								.display-table-cell.vertical-align-middle
-				//- 									.attendee-company-name= attendee.company
-				//- 									.attendee-company-title.no-margin= attendee.title
+				.modal-container(id="attendees")
+					.modal
+						.modal-header
+							h2 Jam 2017 Attendees
+							.modal-close
+								+icon({"name": "close"})
+						.modal-body
+							ul.attendees-list
+								each attendee in attendees
+									if attendee.company !== "(no value)" && attendee.title !== "(no value)"
+										li
+											.display-table
+												.display-table-cell.vertical-align-middle.padding-right-3
+													.company-logo.no-margin(style="background-image: url(https://logo.clearbit.com/#{attendee.company.toLowerCase()}.com?s=128)")
+												.display-table-cell.vertical-align-middle
+													.attendee-company-title= attendee.title
+													.attendee-company-name= attendee.company
 
 			.sub-section
 				h3.sub-section-heading Attendee stats
@@ -230,28 +233,25 @@ block body
 				h3.sub-section-heading Testimonials
 
 				.columns.display-flex.flex-wrap
-					each t in testimonials
+					each t, i in testimonials
 						.columns-4.display-flex.margin-bottom-4
 							.panel-basic.testimonial
 								// .tweet-date= t.date
 								//- a.tweet-text(href="#{tweet.link}" target="_blank")
 								p.testimonial-text= t.text
-								.testimonial-name= t.name
-								.testimonial-position= t.position
+
+								.display-table.vertical-align-middle
+									.display-table-cell.vertical-align-middle
+										.testimonial-avatar.margin-right-3(style="background-image: url(/public/img/testimonials/#{i}.jpg)")
+									.display-table-cell.vertical-align-middle
+										.testimonial-name= t.name
+										.testimonial-position= t.position
 
 
 				.panel.padding-8.text-center
 					.max-width-600.margin-auto
 						p.text-7.text-brand 77% of attendees said the conference was 'better' or 'way better' than similar events.
 			
-			.sub-section.no-margin
-				h3.sub-section-heading Sponsors
-				.columns.display-flex-above-md.flex-wrap
-					each sponsor in sponsors
-						.columns-3.display-flex-above-md
-							.panel.padding-10.text-center.display-flex.flex-align-center.flex-justify-center
-								img(src="../public/img/sponsors/#{sponsor.name}.png" width="#{sponsor.width}px")
-
 
 	.section(id="packages")
 		.container
@@ -279,9 +279,18 @@ block body
 
 							.margin-bottom-5
 								h4.margin-bottom-2.weight-medium  Venue
-								.text-4 Hawker house
+								.text-4 Hawker House
 
 							a.button.button-primary(href="https://www.jamlondon.io/conferences/2018" target="_blank") See more details
+
+
+			.sub-section
+				h3.sub-section-heading Past sponsors
+				.columns.display-flex-above-md.flex-wrap
+					each sponsor in sponsors
+						.columns-3.display-flex-above-md
+							.panel.padding-10.text-center.display-flex.flex-align-center.flex-justify-center(style="height: 180px")
+								img(src="../public/img/sponsors/#{sponsor.name}.png" width="#{sponsor.width}px")
 
 			.sub-section
 
@@ -303,22 +312,22 @@ block body
 
 			.sub-section.no-margin-bottom
 
-				h3.sub-section-heading Packages
+				h3.sub-section-heading Build your own sponsorship package
 
 				.panel.package-container
 					.core-package.clearfix
 						.left
 							.margin-bottom-3
-								h2 Core package
+								h2 By sponsoring JAM, you get:
 							.core-price £5000 + VAT
-							
+
 							ul.package-features
 								li 
 									+icon({"name": "tick"})
-									| Logo placement on our website
+									| Logo placement on our website (<a href="https://www.jamlondon.io/conference/2017" target="_blank">see example</a>)
 								li 
 									+icon({"name": "tick"})
-									| Logo placement in event introduction deck
+									| Logo placement in event introduction deck (<a href="https://www.dropbox.com/s/164b6httyf5h2ns/breakfast.pdf?dl=0" target="_blank">see example</a>)
 								li
 									+icon({"name": "tick"})
 									| Logo placement in all pre-event emails to attendees
@@ -330,43 +339,60 @@ block body
 									| Dedicated introduction of your company by our MC
 								li
 									+icon({"name": "tick"})
-									| Feature in our attendee booklet - 1 A5 page
+									| Feature in our attendee booklet - 1 A5 page (<a href="https://www.dropbox.com/s/wrqfxlmdt4x2ldh/attendee-booklet-2017-final.pdf?dl=0" target="_blank">see example</a>)
 								li
 									+icon({"name": "tick"})
-									| 1 ticket (worth £350 each)
+									| 1 ticket (worth £350)
 
 								li
 									+icon({"name": "tick"})
 									| 30% discount on all additional tickets
 								li
 									+icon({"name": "tick"})
-									| Access to attendee list before the event
+									| Access to attendees list before the event 
+									span.tooltip (more info)
+										.tooltip-content
+											p Due to GDPR restrictions, this list will not include email addresses or phone numbers. 
 						.right
-							h2.margin-bottom-5 Extras
+							h2.margin-bottom-5 And you can also choose from...
 							.extras-list
 							
 								each package in extras
 									.package
 										.display-table.width-100
-											.display-table-cell
+											.display-table-cell.vertical-align-top
 												.package-title= package.name
-												if package.description
 													//- .package-description= package.description
 												//- .package-link See example
-												//- .package-quantity.margin-bottom-4 1 of 3 left
-											if package.status !== 0
 
-											.display-table-cell.text-right
-												.package-price= "£"+ package.price
 
+											if package.stock == 0
+												.display-table-cell.vertical-align-top.text-right
+													.package-sold-out Sold out
+
+
+	
+												
+
+											
+										if package.stock !== 0
+											ul.package-details
+												li= "£"+ package.price + " + VAT"
+												li
+													| #{package.stock} of #{package.qty} left
+
+												if package.link
+													li
+														a(href="" ) See example
 	.section.background-white(id="next")
-		.text-center
-			h2.section-heading.text-center.margin-bottom-3 Next steps
+		.container
+			.text-center
+				h2.section-heading.text-center.margin-bottom-3 Next steps
 
-			.margin-bottom-5
-				p.section-subheading Sponsorship slots are limited and available on a first-come, first-served basis. Schedule a call to discuss your goals with Mathilde.
+				.margin-bottom-5
+					p.section-subheading Sponsorship slots are limited and available on a first-come, first-served basis. Schedule a call to discuss your goals with Mathilde.
 
-			a.button.button-large.button-primary.margin-bottom-3(href="https://calendly.com/jam-sponsorship" target="_blank") Let's have a chat!
+				a.button.button-large.button-primary.margin-bottom-3(href="http://calendly.com/mathilde-jam/sponsorship" target="_blank") Let's have a chat!
 
 
 	footer.footer
