@@ -98,18 +98,14 @@ $(document).ready(function() {
 
 	var data = {
 	    labels: [
-	        "Manager",
-	        "Director",
-	        "Executive"
+	        "Teams",
+	        "Individuals",
 	    ],
 	    datasets: [{
-	        data: [69, 19, 11],
+	        data: [63, 37],
 	        backgroundColor: [
                 "#132de7",
-                "#28bf54",
-                "#fec919",
-                "#e25e04",
-                "#fe2c78"
+                "#28bf54"
 	        ]
 	    }]
 	};

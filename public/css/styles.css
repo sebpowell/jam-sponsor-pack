@@ -2188,11 +2188,13 @@ img { max-width: 100%; }
 
 .footer svg { width: 140px; height: 40px; fill: #9E9E9E; }
 
-.intro-section { max-width: 700px; margin: 0 auto; }
+.intro-section { max-width: 800px; margin: 0 auto; }
 
 .intro-section p { font-size: 20px; line-height: 1.7; }
 
 .intro-section p:not(:last-of-type) { margin-bottom: 35px; }
+
+.intro-section p a { color: #1a1ff4; }
 
 .section { padding: 60px 0; border-bottom: 1px solid #ececec; }
 
@@ -2213,6 +2215,8 @@ img { max-width: 100%; }
 .section .sub-section:last-of-type { padding-bottom: 0; }
 
 .section .sub-section .sub-section-heading { font-size: 25px; font-weight: 600; margin-bottom: 30px; }
+
+.divider { margin: 35px 0 50px 0; border-top: 1px solid #ececec; }
 
 #intro { padding: 100px 0; }
 
@@ -2304,6 +2308,8 @@ img { max-width: 100%; }
 
 .package-details > li:not(:first-child):before { content: "\2022"; position: relative; top: -2px; font-size: 8px; margin: 0 8px; }
 
+.package-details > li a { text-decoration: underline; text-underline-position: under; }
+
 .core-package .left { padding: 25px; position: relative; }
 
 @media (min-width: 720px) { .core-package .left { width: 50%; padding: 50px; float: left; } }
@@ -2328,11 +2334,11 @@ img { max-width: 100%; }
 
 .core-package .package-features > li { display: block; margin-bottom: 20px; position: relative; line-height: 1.5; padding-left: 40px; }
 
-.core-package .package-features > li a { color: #9E9E9E; }
+.core-package .package-features > li > a { color: #9E9E9E; }
 
-.core-package .package-features > li a:hover { color: #1a1ff4; text-decoration: underline; text-underline-position: under; }
+.core-package .package-features > li > a:hover { color: #1a1ff4; text-decoration: underline; text-underline-position: under; }
 
-.core-package .package-features > li svg { width: 30px; height: 30px; fill: #4dc41a; vertical-align: middle; display: inline-block; position: relative; left: 0; position: absolute; top: -4px; margin-right: 10px; }
+.core-package .package-features > li > svg { width: 30px; height: 30px; fill: #4dc41a; vertical-align: middle; display: inline-block; position: relative; left: 0; position: absolute; top: -4px; margin-right: 10px; }
 
 .package-quantity { color: #757575; font-size: 13px; }
 
@@ -2402,11 +2408,11 @@ img { max-width: 100%; }
 
 .modal-close svg { width: 15px; height: 15px; }
 
-.modal { position: relative; width: 100%; max-width: 600px; margin: 0 auto; border-radius: 3px; background: white; min-height: 500px; -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.4); box-shadow: 0 0 6px rgba(0, 0, 0, 0.4); -webkit-transition: all .5s; transition: all .5s; -webkit-transform: scale(0.9); transform: scale(0.9); }
+.modal { position: relative; width: 100%; max-width: 600px; margin: 0 auto; border-radius: 3px; background: white; -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.4); box-shadow: 0 0 6px rgba(0, 0, 0, 0.4); -webkit-transition: all .5s; transition: all .5s; -webkit-transform: scale(0.9); transform: scale(0.9); }
 
 .modal .modal-body { max-height: calc(100vh - 100px); overflow-y: scroll; }
 
-.modal .modal-header { border-bottom: 1px solid #ececec; padding-left: 30px; height: 60px; position: relative; border-radius: 3px 3px 0 0; background-color: #EEEEEE; }
+.modal .modal-header { border-bottom: 1px solid #ececec; padding-left: 25px; height: 60px; position: relative; border-radius: 3px 3px 0 0; background-color: #EEEEEE; }
 
 .modal .modal-header h2 { font-size: 18px; font-weight: 500; position: absolute; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); margin: 0; line-height: 1; }
 

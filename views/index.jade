@@ -1,8 +1,8 @@
 extends _layout
 
 block body
-	.masthead(style="background-image: url(http://cdn.jamlondon.io.s3.amazonaws.com/photos/conference/2017/070.jpg)")
-		h1 Jam 2018 Sponsorship Pack
+	.masthead(style="background-image: url(http://cdn.jamlondon.io.s3.amazonaws.com/photos/conference/2017/61.jpg)")
+		h1 Sponsor JAM 2018
 		.masthead-logo
 
 	//- .navigation
@@ -24,6 +24,8 @@ block body
 				p The idea for JAM originally came to us when we started working together at an early-stage startup a couple of years ago. We were building a complex product, and like many people at the start of their career, we learnt on the job – largely through trial and error. We often asked ourselves how other companies go about designing and building great products. What goes on behind the scenes? How do product managers, designers and engineers make it all happen?
 				
 				p We realised we really wanted to catch a glimpse of what went on behind the scenes of the companies we looked up to. And we thought other people would want to know too. So we decided to create a community to share these stories – JAM was born.
+
+				p 4 years later, JAM has become the unmissable annual gathering for all the best product people and their team.
 
 	.section.background-white(id="team")
 		.container
@@ -76,15 +78,15 @@ block body
 	.section(id="2017")
 		.container
 
-			h2.section-heading.text-center.margin-bottom-10 Jam 2017 Review
+			h2.section-heading.text-center.margin-bottom-10 Jam 2017 in review
 
 			.sub-section.no-border.no-padding-bottom
-				h3.sub-section-heading Stats
+				h3.sub-section-heading Who was in the room?
 				.columns.display-flex-above-md
 					.columns-4.display-flex-above-md
 						.panel.text-center.padding-10
 							.caption.margin-bottom-2 Attendees
-							.stat 532
+							.stat 605
 							
 					.columns-4.display-flex-above-md
 						.panel.text-center.padding-10
@@ -96,47 +98,8 @@ block body
 							.caption.margin-bottom-2 NPS
 							.stat 8.1
 
-			.sub-section
-				h3.sub-section-heading Attendees
-			
-				.attendees.columns
-					each attendee, i in attendees
-						if i <= 11
-							.columns-3.display-flex
+				.divider
 
-								if i == 11
-									.attende.width-100.see-more.display-flex.flex-align-center.flex-justify-center.background-greyscale-200.see-more(data-modal="attendees")
-										.text-5 + 521 more
-
-								else
-									.attendee.panel-basic.width-100
-										.company-logo(style="background-image: url(https://logo.clearbit.com/#{attendee.domain}?s=128) !important")
-										.attendee-company-title= attendee.title
-										.attendee-company-name= attendee.company.toLowerCase()
-
-				.modal-container(id="attendees")
-					.modal
-						.modal-header
-							h2 Jam 2017 Attendees
-							.modal-close
-								+icon({"name": "close"})
-						.modal-body
-							ul.attendees-list
-								each attendee in attendees
-									if attendee.company !== "(no value)" && attendee.title !== "(no value)"
-										li
-											.display-table
-												.display-table-cell.vertical-align-middle.padding-right-3
-													.company-logo.no-margin
-														.logo(style="background-image: url(https://logo.clearbit.com/#{attendee.company.toLowerCase()}.com?s=128)")
-														.placeholder
-												.display-table-cell.vertical-align-middle
-													.attendee-company-title= attendee.title
-													.attendee-company-name= attendee.company
-
-			.sub-section
-				h3.sub-section-heading Attendee stats
-			
 				.columns.display-flex-above-md.flex-wrap
 					.columns-3.display-flex
 						.panel.graph
@@ -198,7 +161,7 @@ block body
 					.columns-3.display-flex
 						.panel.graph
 							.text-center
-								.panel-title Seniority
+								.panel-title Teams vs Individuals
 
 							.margin-bottom-4
 								div.text-center.margin-auto(style="height: 150px; width: 150px")
@@ -206,28 +169,65 @@ block body
 
 							ul.legend
 								li.legend-1 
-									.text Manager (69%)
+									.text Teams (63%)
 								li.legend-2 
-									.text Director (19%)
-								li.legend-3 
-									.text Executive (11%)									
+									.text Individuals (37%)
+
+				.divider
+
+				.attendees.columns
+					each attendee, i in attendees
+						if i <= 11
+							.columns-3.display-flex
+
+								if i == 11
+									.attende.width-100.see-more.display-flex.flex-align-center.flex-justify-center.background-greyscale-200.see-more(data-modal="attendees")
+										.text-5 + 594 more
+
+								else
+									.attendee.panel-basic.width-100
+										.company-logo(style="background-image: url(https://logo.clearbit.com/#{attendee.domain}?s=128) !important")
+										.attendee-company-title= attendee.title
+										.attendee-company-name= attendee.company.toLowerCase()
+
+				.modal-container(id="attendees")
+					.modal
+						.modal-header
+							h2 Jam 2017 attendees
+							.modal-close
+								+icon({"name": "close"})
+						.modal-body
+							ul.attendees-list
+								each attendee in attendees
+									if attendee.company !== "(no value)" && attendee.title !== "(no value)"
+										li
+											.display-table
+												.display-table-cell.vertical-align-middle.padding-right-3
+													.company-logo.no-margin
+														.logo(style="background-image: url(https://logo.clearbit.com/#{attendee.company.toLowerCase()}.com?s=128)")
+														.placeholder
+												.display-table-cell.vertical-align-middle
+													.attendee-company-title= attendee.title
+													.attendee-company-name= attendee.company								
 
 
 			.sub-section
-				h3.sub-section-heading Photos &amp; Videos
+				h3.sub-section-heading Photos &amp; videos
 
 				a.video.large-video(href="https://www.youtube.com/watch?v=VRpTJXBRiXk" target="_blank")
-					.video-thumb(style="background-image: url(https://cdn.jamlondon.io/photos/conference/2017/190.jpg)")
+					.video-thumb(style="background-image: url(https://cdn.jamlondon.io/photos/conference/2017/61.jpg)")
 						.video-play
 							+icon({"name": "play"})
 				
 				.columns
-					- for (var i = 62; i < 70; i++)
+					- var photos = [42, 57, 81, 92, 52, 70, 78, 44];
+
+					each i, l in photos
 						.columns-3
-							if i == 69
+							if l == 7
 								.photo.see-more(style="background-image: url(https://cdn.jamlondon.io/photos/conference/2017/0#{i}.jpg)")
-									a.content(href="https://www.facebook.com/pg/makingjam/photos/?tab=album&album_id=2209087595784228" target="_blank")
-										| + 245 more
+									a.content(href="https://www.dropbox.com/sh/kbmfaxbx9z8gqe3/AADxS_WjbJlgXyo-sa_cLYxha?dl=0" target="_blank")
+										| + 235 more
 							else
 								.photo(style="background-image: url(https://cdn.jamlondon.io/photos/conference/2017/0#{i}.jpg)")
 
@@ -260,32 +260,9 @@ block body
 			h2.section-heading.text-center.margin-bottom-8 Sponsorship opportunities
 
 			.sub-section
-				.columns
-					.columns-6
-						.large-para
-							p Going on its 4th year, JAM provides a fantastic opportunity to expose your brand to a talented audience of some of London’s leading product managers, designers and founders / leading product teams 
-
-							p We are looking for great companies that want to help us run an exceptional event – one that inspires, energises and educates/elevates/cultivates the best product teams in town. 
-
-							p And we want you in the spotlight – this is why we’ve designed an open sponsorship menu, leaving it to you to decide what suits you best / how you’d like to get involved.
-
-					.columns-6
-						.background-white.padding-10.panel-basic
-							.margin-bottom-5
-								h4.margin-bottom-2.weight-medium.small-heading Date
-								.text-4 1st November 2018
-
-							.margin-bottom-5
-								h4.margin-bottom-2.weight-medium Capacity
-								.text-4 650
-
-							.margin-bottom-5
-								h4.margin-bottom-2.weight-medium  Venue
-								.text-4 Hawker House
-
-							a.button.button-primary(href="https://www.jamlondon.io/conferences/2018" target="_blank") See more details
-
-
+				.intro-section.text-center
+					p Not just a conference, <a href="https://www.jamlondon.io/conferences/2018" target="_blank">JAM 2018</a> will be a real experience, living up to the reputation we built the past three years. Attendees expect not only to learn, but also meet great people and have fun. We’re looking for great companies to help us craft an exceptional event – one that brings together all the best product teams in Europe for a day of stories, learnings and great conversations. And one where you can shine as a sponsor!
+							
 			.sub-section
 				h3.sub-section-heading Past sponsors
 				.columns.display-flex-above-md.flex-wrap
@@ -326,7 +303,19 @@ block body
 							ul.package-features
 								li 
 									+icon({"name": "tick"})
-									| Logo placement on our website (<a href="https://www.jamlondon.io/conference/2017" target="_blank">see example</a>)
+									| Logo placement on our website (<a href="https://www.jamlondon.io/conference/2017" target="_blank" data-modal="1">see example</a>)
+
+									.modal-container(id="1")
+										.modal
+											.modal-header
+												h2 Jam 2017 attendees
+												.modal-close
+													+icon({"name": "close"})
+											
+											.modal-body.padding-5
+												p Not just a logo on some glazed paper, it’s your chance to send attendees the right message: tell them about your team, culture, product, or anything you know will resonate. We’ll help you craft the message and design everything!
+
+
 								li 
 									+icon({"name": "tick"})
 									| Logo placement in event introduction deck (<a href="https://www.dropbox.com/s/164b6httyf5h2ns/breakfast.pdf?dl=0" target="_blank">see example</a>)
@@ -341,7 +330,19 @@ block body
 									| Dedicated introduction of your company by our MC
 								li
 									+icon({"name": "tick"})
-									| Feature in our attendee booklet - 1 A5 page (<a href="https://www.dropbox.com/s/wrqfxlmdt4x2ldh/attendee-booklet-2017-final.pdf?dl=0" target="_blank">see example</a>)
+									| Feature in our attendee booklet - 1 A5 page (<a data-modal="booklet">more info</a>)
+
+									.modal-container(id="booklet")
+										.modal
+											.modal-header
+												h2 Attendee booklet
+												.modal-close
+													+icon({"name": "close"})
+											
+											.modal-body.padding-5
+												p.margin-bottom-4 Not just a logo on some glazed paper, it’s your chance to send attendees the right message: tell them about your team, culture, product, or anything you know will resonate. We’ll help you craft the message and design everything!
+
+												a.button.button-primary(href="https://www.dropbox.com/s/wrqfxlmdt4x2ldh/attendee-booklet-2017-final.pdf?dl=0" target="_blank") See example
 								li
 									+icon({"name": "tick"})
 									| 1 ticket (worth £350)
@@ -352,14 +353,24 @@ block body
 								li
 									+icon({"name": "tick"})
 									| Access to attendees list before the event 
-									span.tooltip (more info)
-										.tooltip-content
-											p Due to GDPR restrictions, this list will not include email addresses or phone numbers. 
+									span.tooltip(data-modal="data") (more info)
+
+
+									.modal-container(id="data")
+										.modal
+											.modal-header
+												h2 Access to attendees list before the event 
+												.modal-close
+													+icon({"name": "close"})
+											
+											.modal-body.padding-5
+												p Due to GDPR restrictions, this list will not include email addresses or phone numbers. 
+											
 						.right
 							h2.margin-bottom-5 And you can also choose from...
 							.extras-list
 							
-								each package in extras
+								each package, i in extras
 									.package
 										.display-table.width-100
 											.display-table-cell.vertical-align-top
@@ -372,20 +383,27 @@ block body
 												.display-table-cell.vertical-align-top.text-right
 													.package-sold-out Sold out
 
-
-	
-												
-
-											
 										if package.stock !== 0
 											ul.package-details
 												li= "£"+ package.price + " + VAT"
 												li
 													| #{package.stock} of #{package.qty} left
 
-												if package.link
+												if package.desc
 													li
-														a(href="" ) See example
+														a(data-modal="package-#{i}") More info
+									
+									.modal-container(id="package-#{i}")
+										.modal
+											.modal-header
+												h2= package.name
+												.modal-close
+													+icon({"name": "close"})
+											
+											.modal-body.padding-5
+												if package.image 
+													img.margin-bottom-3(src="#{package.image}")
+												p= package.desc
 	.section.background-white(id="next")
 		.container
 			.text-center

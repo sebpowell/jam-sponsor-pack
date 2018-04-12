@@ -54,7 +54,7 @@
 	border-radius: 3px;
 	background: white;
 	
-	min-height: 500px;
+	// min-height: 500px;
 	box-shadow: 0 0 6px rgba(0,0,0,0.4);
 	transition: all .5s;
 
@@ -68,7 +68,7 @@
 
 	.modal-header {
 		border-bottom: 1px solid colors("keyline");
-		padding-left: sizes(6);
+		padding-left: sizes(5);
 		height: 60px;
 		position: relative;
 		border-radius: 3px 3px 0 0;

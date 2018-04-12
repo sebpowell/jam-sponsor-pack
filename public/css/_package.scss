@@ -32,6 +32,11 @@
 			}
 		}
 
+		a {
+			text-decoration: underline;
+			text-underline-position: under;
+		}
+
 		&.is-active {
 			// color: white;
 		}
@@ -107,7 +112,7 @@
 			line-height: 1.5;
 			padding-left: sizes(8);
 
-			a {
+			> a {
 
 				color: colors("greyscale", 500);
 
@@ -118,7 +123,7 @@
 				}
 			}
 
-			svg {
+			> svg {
 				width: 30px;
 				height: 30px;
 				fill: colors("secondary");
