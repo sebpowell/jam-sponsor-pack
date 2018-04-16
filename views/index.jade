@@ -25,7 +25,7 @@ block body
 				
 				p We realised we really wanted to catch a glimpse of what went on behind the scenes of the companies we looked up to. And we thought other people would want to know too. So we decided to create a community to share these stories – JAM was born.
 
-				p 4 years later, JAM has become the unmissable annual gathering for all the best product people and their team.
+				p 4 years later, JAM has become the unmissable annual gathering for all the best product people and their team. And we'd love for you to be a part of it!
 
 	.section.background-white(id="team")
 		.container
@@ -214,22 +214,22 @@ block body
 			.sub-section
 				h3.sub-section-heading Photos &amp; videos
 
-				a.video.large-video(href="https://www.youtube.com/watch?v=VRpTJXBRiXk" target="_blank")
+				a.video.large-video(href="https://www.youtube.com/watch?v=JYL-42UWfh8&t=4s" target="_blank")
 					.video-thumb(style="background-image: url(https://cdn.jamlondon.io/photos/conference/2017/130.jpg)")
 						.video-play
 							+icon({"name": "play"})
 				
 				.columns
-					- var photos = [42, 57, 81, 92, 52, 70, 78, 44];
+					- var photos = ["042", "057", "081", "092", "052", "070", "113", "044"];
 
 					each i, l in photos
 						.columns-3
 							if l == 7
-								.photo.see-more(style="background-image: url(https://cdn.jamlondon.io/photos/conference/2017/0#{i}.jpg)")
+								.photo.see-more(style="background-image: url(https://cdn.jamlondon.io/photos/conference/2017/#{i}.jpg)")
 									a.content(href="https://www.dropbox.com/sh/kbmfaxbx9z8gqe3/AADxS_WjbJlgXyo-sa_cLYxha?dl=0" target="_blank")
 										| + 235 more
 							else
-								.photo(style="background-image: url(https://cdn.jamlondon.io/photos/conference/2017/0#{i}.jpg)")
+								.photo(style="background-image: url(https://cdn.jamlondon.io/photos/conference/2017/#{i}.jpg)")
 
 			.sub-section
 				h3.sub-section-heading Testimonials
