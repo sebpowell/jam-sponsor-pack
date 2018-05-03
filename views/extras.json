@@ -18,7 +18,7 @@
 	{
 		"name": "Attendee experience",
 		"qty": 3,
-		"stock": 3,
+		"stock": 2,
 		"price": 1500,
 		"image": "http://cdn.jamlondon.io.s3.amazonaws.com/photos/conference/2016/189.jpg",
 		"desc": "Very twittable branded cupcakes, a special cocktail, a live performance show – We’ll work with you to craft the perfect experience for a memorable interaction with the JAM crowd. There is no crazy idea, and we'd love to hear what you have in mind!"
@@ -41,7 +41,7 @@
 	{
 		"name": "Dedicated email to all attendees pre or post event",
 		"qty": 1,
-		"stock": 1,
+		"stock": 0,
 		"price": 1500
 	},
 	{
