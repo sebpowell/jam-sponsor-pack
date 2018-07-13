@@ -148,14 +148,14 @@
 
 	@include uppercase(0.1em);
 	font-weight: 500;
-	background: red;
+	background: #ff3939;
 	color: white;
 	font-size: 10px;
 	font-weight: 600;
 	border-radius: 3px;
 	display: inline-block;
 	top: 15px;
-	padding: 4px 10px;
+	padding: 4px 5px 3px 6px;
 }
 
 .package-link {

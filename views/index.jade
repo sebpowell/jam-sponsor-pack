@@ -375,14 +375,9 @@ block body
 										.display-table.width-100
 											.display-table-cell.vertical-align-top
 												.package-title= package.name
-													//- .package-description= package.description
-												//- .package-link See example
-
-
-											if package.stock == 0
-												.display-table-cell.vertical-align-top.text-right
-													.package-sold-out Sold out
-
+												if package.stock == 0
+													.package-sold-out.margin-top-1 Sold out!
+				
 										if package.stock !== 0
 											ul.package-details
 												li= "£"+ package.price + " + VAT"
