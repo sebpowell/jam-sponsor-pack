@@ -381,12 +381,14 @@ block body
 										if package.stock !== 0
 											ul.package-details
 												li= "£"+ package.price + " + VAT"
-												li
-													| #{package.stock} of #{package.qty} left
+												li #{package.stock} of #{package.qty} left
 
 												if package.desc
 													li
 														a(data-modal="package-#{i}") More info
+
+											if package.stock === 1
+												.package-sold-out.nearly.margin-top-2 Only 1 left!
 									
 									.modal-container(id="package-#{i}")
 										.modal

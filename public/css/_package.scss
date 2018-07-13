@@ -156,6 +156,10 @@
 	display: inline-block;
 	top: 15px;
 	padding: 4px 5px 3px 6px;
+
+	&.nearly {
+		background-color: orange;
+	}
 }
 
 .package-link {
