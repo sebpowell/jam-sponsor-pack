@@ -2,24 +2,15 @@
 	{
 		"name": "Dedicated spot in the Sponsors Lounge",
 		"qty": 3,
-		"stock": 1,
+		"stock": 0,
 		"price": 3000,
 		"image": "http://cdn.jamlondon.io.s3.amazonaws.com/photos/conference/2017/142.jpg",
 		"desc": "This isn’t a boring booth surrounded with 100 other sponsors. We’re keeping things casual with comfy sofas in a dedicated lounge area – let our attendees flock to you! It’s the perfect opportunity to meet all the great people in the room, demo your product or talk to future hires over coffee (or a beer later during the day!)."
 	},
-
-	{
-		"name": "Promotional item or flyer in goodie bag",
-		"qty": 4,
-		"stock": 4,
-		"image": "http://cdn.jamlondon.io.s3.amazonaws.com/photos/conference/2017/8.jpg",
-		"price": 500,
-		"desc": "Treat attendees with a useful goodie, like a portable phone charger, a branded pair of socks for the long winter nights, a bag of popcorn for the way back. You can also insert a special postcard, flyer, sticker or anything you want attendees to take back home (or to the office!) – surprise them, they’ll love it!"
-	},
 	{
 		"name": "Attendee experience",
 		"qty": 3,
-		"stock": 2,
+		"stock": 0,
 		"price": 1500,
 		"image": "http://cdn.jamlondon.io.s3.amazonaws.com/photos/conference/2016/189.jpg",
 		"desc": "Very twittable branded cupcakes, a special cocktail, a live performance show – We’ll work with you to craft the perfect experience for a memorable interaction with the JAM crowd. There is no crazy idea, and we'd love to hear what you have in mind!"
@@ -49,11 +40,5 @@
 		"qty": 1,
 		"stock": 0,
 		"price": 1500
-	},
-	{
-		"name": "Additional page in attendee booklet",
-		"qty": 2,
-		"stock": 2,
-		"price": 500
 	}
 ]
